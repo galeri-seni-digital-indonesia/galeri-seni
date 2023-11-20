@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('artists', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('gambar');
             $table->text('biodata');
             $table->timestamps();
         });

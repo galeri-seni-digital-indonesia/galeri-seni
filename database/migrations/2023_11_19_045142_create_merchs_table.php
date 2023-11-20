@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('merchs', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('gambar');
             $table->text('deskripsi');
             $table->integer('harga');
             $table->string('link');
