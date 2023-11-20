@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('arts', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->foreignId('ArtistID');
-            $table->integer('Tahun');
-            $table->string('Ukuran');
+            $table->integer('tahun');
+            $table->string('ukuran');
             $table->string('mediaLukis');
             $table->string('gambar');
             $table->text('deskripsi');
+            $table->foreignId('artistId');
             $table->timestamps();
         });
     }
