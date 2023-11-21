@@ -27,6 +27,9 @@ Route::any('/{any}', function (ServerRequestInterface $request) {
         'password' => '',
         'database' => 'galeri_seni',
         'basePath' => '/api/v1',
+        'debug' => true,
+        'tables' => 'arts,artists,events,merchs',
+        'middlewares' => 'cors,textSearch',
     ]);
     $api = new Api($config);
     $response = $api->handle($request);
