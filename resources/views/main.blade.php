@@ -17,8 +17,10 @@
   <body>
     @include('partials.navbar')
     
-    {{-- @yield('main-content') --}}
-
+    <main class="px-28 mb-40">
+      @yield('main-content')
+    </main>
+    
     @include('partials.footer')
   </body>
 </html>
