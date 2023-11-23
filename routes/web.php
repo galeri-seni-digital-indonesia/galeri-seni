@@ -18,3 +18,27 @@ Route::get('/', function () {
         "title" => "Home",
     ]);
 });
+
+Route::get('/galeri', function () {
+    return view('pages/artDetail', [
+        "title" => "Galeri",
+    ]);
+});
+
+Route::get('/acara', function () {
+    return view('pages/eventDetail', [
+        "title" => "Event",
+    ]);
+});
+
+Route::get('/seniman', function () {
+    return view('pages/artistDetail', [
+        "title" => "Artist",
+    ]);
+});
+
+Route::get('/merch', function () {
+    return view('pages/merchDetail', [
+        "title" => "Merchandise",
+    ]);
+});

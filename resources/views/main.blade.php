@@ -17,7 +17,7 @@
   <body>
     @include('partials.navbar')
     
-    <main class="px-28 mb-40">
+    <main class="px-28 mt-12 mb-40">
       @yield('main-content')
     </main>
     

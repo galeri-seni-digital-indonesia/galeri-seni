@@ -3,7 +3,7 @@
 @section('main-content')
 
 {{-- heros --}}
-<div class="flex flex-row gap-20 items-center mt-12">
+<div class="flex flex-row gap-20 items-center">
   <div class="flex flex-1 flex-col justify-start">
     <h1 class="text-slate-700 text-5xl font-bold pb-4 font-header">
       Lorem ipsum dolor sit amet consectetur
@@ -157,17 +157,17 @@
           <div class="flex justify-center items-center">
             <i class="fas fa-scroll"></i>
           </div>
-          <p>Penyelenggara</p>
+          <p class="font-display">Penyelenggara</p>
           <div class="flex justify-center items-center">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <p>Lokasi</p>
+          <p class="font-display">Lokasi</p>
           <div class="flex justify-center items-center ">
             <i class="far fa-calendar"></i>
           </div>
-          <p>01 Januari 2023</p>
+          <p class="font-display">01 Januari 2023</p>
           <div></div>
-          <p class="font-bold">00:00-00:00 WIB</p>
+          <p class="font-bold font-display">00:00-00:00 WIB</p>
         </div>
       </div>
       <div class="flex items-center w-2/6">
@@ -186,17 +186,17 @@
           <div class="flex justify-center items-center">
             <i class="fas fa-scroll"></i>
           </div>
-          <p>Penyelenggara</p>
+          <p class="font-display">Penyelenggara</p>
           <div class="flex justify-center items-center">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <p>Lokasi</p>
+          <p class="font-display">Lokasi</p>
           <div class="flex justify-center items-center ">
             <i class="far fa-calendar"></i>
           </div>
-          <p>01 Januari 2023</p>
+          <p class="font-display">01 Januari 2023</p>
           <div></div>
-          <p class="font-bold">00:00-00:00 WIB</p>
+          <p class="font-bold font-display">00:00-00:00 WIB</p>
         </div>
       </div>
       <div class="flex items-center w-2/6">
@@ -215,17 +215,17 @@
           <div class="flex justify-center items-center">
             <i class="fas fa-scroll"></i>
           </div>
-          <p>Penyelenggara</p>
+          <p class="font-display">Penyelenggara</p>
           <div class="flex justify-center items-center">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <p>Lokasi</p>
+          <p class="font-display">Lokasi</p>
           <div class="flex justify-center items-center ">
             <i class="far fa-calendar"></i>
           </div>
-          <p>01 Januari 2023</p>
+          <p class="font-display">01 Januari 2023</p>
           <div></div>
-          <p class="font-bold">00:00-00:00 WIB</p>
+          <p class="font-bold font-display">00:00-00:00 WIB</p>
         </div>
       </div>
       <div class="flex items-center w-2/6">
@@ -244,17 +244,17 @@
           <div class="flex justify-center items-center">
             <i class="fas fa-scroll"></i>
           </div>
-          <p>Penyelenggara</p>
+          <p class="font-display">Penyelenggara</p>
           <div class="flex justify-center items-center">
             <i class="fas fa-map-marker-alt"></i>
           </div>
-          <p>Lokasi</p>
+          <p class="font-display">Lokasi</p>
           <div class="flex justify-center items-center ">
             <i class="far fa-calendar"></i>
           </div>
-          <p>01 Januari 2023</p>
+          <p class="font-display">01 Januari 2023</p>
           <div></div>
-          <p class="font-bold">00:00-00:00 WIB</p>
+          <p class="font-bold font-display">00:00-00:00 WIB</p>
         </div>
       </div>
       <div class="flex items-center w-2/6">
