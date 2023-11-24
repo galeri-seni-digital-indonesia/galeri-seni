@@ -21,6 +21,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('/v1/records', function () {
+    return redirect('https://documenter.getpostman.com/view/23618843/2s9YeA9Dpq');
+});
+
 Route::any('/{any}', function (ServerRequestInterface $request) {
     $config = new Config([
         'username' => 'root',
