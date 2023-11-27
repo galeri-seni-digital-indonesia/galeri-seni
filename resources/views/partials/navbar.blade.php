@@ -11,10 +11,10 @@
     <div class="flex flex-row justify-end w-full">
       <nav id="drawer" class="flex items-center">
         <ul class="flex items-center gap-12">
-          <li class="h-fit font-medium text-base text-black rounded hover:text-blue-700 font-header"><a href="/galeri">Galeri</a></li>
-          <li class="h-fit font-medium text-base text-black rounded hover:text-blue-700 font-header"><a href="/acara">Acara</a></li>
-          <li class="h-fit font-medium text-base text-black rounded hover:text-blue-700 font-header"><a href="/seniman">Seniman</a></li>
-          <li><a class="bg-slate-500 rounded-full font-medium py-3 px-8 text-base text-white hover:bg-slate-700 font-display" href="/merch">Beli Merch</a></li>
+          <li class="btn-galseid-link"><a href="/galeri">Galeri</a></li>
+          <li class="btn-galseid-link"><a href="/acara">Acara</a></li>
+          <li class="btn-galseid-link"><a href="/seniman">Seniman</a></li>
+          <li><a class="btn-galseid-yellow" href="/merch">Beli Merch <i class="fas fa-coffee"></i></a></li>
         </ul>
       </nav>
     </div>

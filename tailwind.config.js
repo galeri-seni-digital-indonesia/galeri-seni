@@ -15,7 +15,15 @@ export default {
       'display': ['Nunito Sans'],
       'header': ['Maven Pro'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'galseid-dark': '#101010',
+        'galseid-yellow': '#F9D423',
+        'galseid-orange': '#E65C00',
+        'galseid-red-dark': '#B31217',
+        'galseid-red-light': '#E52D27',
+      },
+    },
   },
   plugins: [],
 }

@@ -2,6 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    background: #F5F5F5 url('../../public/assets/img/bg-blur.png') repeat center top;
+    background-size: cover;
+    color: #1d1d1d;
+  }
+}
+
+@layer components {
+  .btn-galseid-link {
+    @apply min-h-[44px] px-4 font-medium text-lg/[44px] text-black rounded-lg hover:bg-black/5 font-header transition-all;
+  }
+
+  .btn-galseid-social {
+    @apply bg-white/10 hover:bg-white/0 hover:border hover:border-galseid-yellow text-2xl flex items-center justify-center py-3 px-3 rounded-lg w-11 h-11 transition-all;
+  }
+
+  .btn-galseid-yellow {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+    padding: 4px 20px;
+    background-image: linear-gradient(to right, theme('colors.galseid-orange'), theme('colors.galseid-yellow'), theme('colors.galseid-yellow'), theme('colors.galseid-orange'));
+    background-position: left;
+    background-size: 200%;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px 0px rgba(239, 195, 0, 0.3);
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+  } .btn-galseid-yellow:hover {
+    background-position: right;
+    font-size: 21px;
+  }
+
+  .btn-galseid-red {
+    display: inline-block;
+    min-height: 44px;
+    line-height: 44px;
+    padding: 4px 20px;
+    background-image: linear-gradient(to right, theme('colors.galseid-red-dark'), theme('colors.galseid-red-light'), theme('colors.galseid-red-light'), theme('colors.galseid-red-dark'));
+    background-position: left;
+    background-size: 200%;
+    border-radius: 12px;
+    box-shadow: 0 6px 30px 0px rgba(239, 0, 0, 0.3);
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: all 0.3s ease-in-out;
+  } .btn-galseid-red:hover {
+    background-position: right;
+    font-size: 21px;
+  }
+}
+
 .grid-template{
   grid-template-columns: auto 1fr;
 }
@@ -9,3 +67,4 @@
 .info-overlay{
   top: 37.5rem;
 }
+
