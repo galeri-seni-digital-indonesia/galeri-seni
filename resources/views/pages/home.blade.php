@@ -3,167 +3,79 @@
 @section('main-content')
 
 {{-- heros --}}
-<div class="flex flex-row gap-20 items-center">
-  <div class="flex flex-1 flex-col justify-start">
-    <h1 class="text-slate-700 text-5xl font-bold pb-4 font-header">
-      Lorem ipsum dolor sit amet consectetur
+<div class="grid grid-cols-12 gap-4 mt-8 items-center">
+  <div class="col-span-12 md:col-span-5 justify-start">
+    <h1 class="mb-8 text-galseid-dark text-[56px]/[120%] font-bold font-header">
+      Apresiasi Karya Seni Nusantara Lewat Galse<span class="text-galseid-orange">i</span><span class="text-galseid-red-dark">d</span>
     </h1>
-    <p class="text-gray-500 text-base pb-12 font-display">
-      Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam neque ultrices.
+    <p class="mb-8 text-galseid-dark text-lg font-display">
+      <b>Galseid</b> merupakan <b>galeri seni digital</b> yang memamerkan karya-karya seni Indonesia untuk meningkatkan kecintaan terhadap <b>seni nusantara</b>.
     </p>
-    <a href="/#" class="bg-slate-500 rounded-full font-bold py-3 px-8 text-base text-white hover:bg-slate-700 w-fit font-display">
-      Jelajahi Galeri Seni
+    <a href="/#" class="btn-galseid-red">
+      Jelajahi Galeri Seni &ensp;<i class="fas fa-long-arrow-alt-right"></i>
     </a>
   </div>
-  <div class="flex flex-1 items-center">
-    <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="p-5 w-full object-contain">
+  <div class="col-span-12 md:col-start-7 md:col-span-6 items-center">
+    <img src="{{ asset('assets/img/hero-images.png') }}" alt="Placeholder Promo Image" class="p-5 w-full object-contain">
   </div>
 </div>
 
 {{-- art --}}
 <div class="text-center mt-36 mb-20">
-  <h2 class="text-slate-500 text-3xl font-bold font-display">Galeri Seni</h2>
+  <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Galeri Seni</h2>
 </div>
-<div class="grid grid-cols-3 gap-x-5 gap-y-5">
+<div class="grid grid-cols-12 gap-16">
+  @for ($i = 0; $i < 6; $i++)
   {{-- cards Component --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
-    <div class="flex flex-col p-6 gap-2">
-      <div class="flex items-center h-64">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
+  <div class="relative col-span-12 sm:col-span-6 md:col-span-4">
+    <object data="{{ asset('assets/img/card-corner-tl.svg') }}" class="absolute h-[70px] w-[70px] z-[-10] mt-[-14px] ms-[-12px]"></object>
+    <object data="{{ asset('assets/img/card-corner-bl.svg') }}" class="absolute bottom-0 h-[70px] w-[70px] z-[-10] mb-[-14px] ms-[-12px]"></object>
+    <object data="{{ asset('assets/img/card-corner-tr.svg') }}" class="absolute right-0 h-[70px] w-[70px] z-[-10] mt-[-14px] me-[-12px]"></object>
+    <object data="{{ asset('assets/img/card-corner-br.svg') }}" class="absolute bottom-0 right-0 h-[70px] w-[70px] z-[-10] mb-[-14px] me-[-12px]"></object>
+    <div class="flex flex-col p-6 gap-2 bg-galseid-blur">
+      <div class="flex items-center h-64 mb-2">
+        <img src="https://gni.kemdikbud.go.id/_next/image?url=%2Fuploads%2FAgus_Djaya_Kuda_Lumping_e378417837.jpg&w=1920&q=60" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
       </div>
-      <div class="flex flex-row gap-2 items-center">
-        <i class="far fa-user"></i>
-        <p class="text-gray-500 text-base font-display">Nama Seniman</p>
+      <div class="flex flex-row gap-2 items-center text-galseid-red-dark font-bold">
+        <i class="fas fa-user"></i>
+        <p class="text-lg font-display">Nama Seniman</p>
       </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
-        Nama Karya Seni
+      <h3 class="text-galseid-dark text-2xl font-bold font-display mb-2">
+        Kuda Lumping
       </h3>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Detail
+      <a href='/#' class="btn-galseid-red text-center">
+        Detail&nbsp;
         <i class="fas fa-external-link-alt"></i>
       </a>
     </div>
   </div>
-  {{-- cards Component --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
-    <div class="flex flex-col p-6 gap-2">
-      <div class="flex items-center h-64">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
-      </div>
-      <div class="flex flex-row gap-2 items-center">
-        <i class="far fa-user"></i>
-        <p class="text-gray-500 text-base font-display">Nama Seniman</p>
-      </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
-        Nama Karya Seni
-      </h3>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Detail
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-  {{-- cards Component --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
-    <div class="flex flex-col p-6 gap-2">
-      <div class="flex items-center h-64">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
-      </div>
-      <div class="flex flex-row gap-2 items-center">
-        <i class="far fa-user"></i>
-        <p class="text-gray-500 text-base font-display">Nama Seniman</p>
-      </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
-        Nama Karya Seni
-      </h3>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Detail
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-  {{-- cards Component --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
-    <div class="flex flex-col p-6 gap-2">
-      <div class="flex items-center h-64">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
-      </div>
-      <div class="flex flex-row gap-2 items-center">
-        <i class="far fa-user"></i>
-        <p class="text-gray-500 text-base font-display">Nama Seniman</p>
-      </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
-        Nama Karya Seni
-      </h3>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Detail
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-  {{-- cards Component --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
-    <div class="flex flex-col p-6 gap-2">
-      <div class="flex items-center h-64">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
-      </div>
-      <div class="flex flex-row gap-2 items-center">
-        <i class="far fa-user"></i>
-        <p class="text-gray-500 text-base font-display">Nama Seniman</p>
-      </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
-        Nama Karya Seni
-      </h3>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Detail
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-  {{-- cards Component --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
-    <div class="flex flex-col p-6 gap-2">
-      <div class="flex items-center h-64">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
-      </div>
-      <div class="flex flex-row gap-2 items-center">
-        <i class="far fa-user"></i>
-        <p class="text-gray-500 text-base font-display">Nama Seniman</p>
-      </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
-        Nama Karya Seni
-      </h3>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Detail
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
+  @endfor
 </div>
 
 {{-- event --}}
 <div class="text-center mt-36 mb-20">
-  <h2 class="text-slate-500 text-3xl font-bold font-display">Acara Seni</h2>
+  <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Acara Seni</h2>
 </div>
-<div class="grid grid-cols-2 gap-x-5 gap-y-5">
+<div class="grid grid-cols-12 gap-8">
+  @for ($i = 0; $i < 4; $i++)
   {{-- card component --}}
-  <div class="bg-slate-200 rounded-3xl">
-    <div class="flex flex-row p-6 items-center justify-between">
+  <div class="relative col-span-12 sm:col-span-6">
+    <div class="flex flex-row p-6 items-center justify-between bg-galseid-blur rounded-2xl">
       <div class="flex flex-col gap-2 my-4">
-        <h3 class="text-slate-500 text-xl font-bold font-display">
+        <h3 class="text-galseid-dark text-2xl font-bold font-display">
           Nama Event
         </h3>
         <div class="grid grid-template gap-x-2 gap-y-1">
           <div class="flex justify-center items-center">
-            <i class="fas fa-scroll"></i>
+            <i class="fas fa-scroll text-galseid-orange"></i>
           </div>
-          <p class="font-display">Penyelenggara</p>
+          <p class="text-base font-display">Penyelenggara</p>
           <div class="flex justify-center items-center">
-            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-map-marker-alt text-galseid-orange"></i>
           </div>
           <p class="font-display">Lokasi</p>
           <div class="flex justify-center items-center ">
-            <i class="far fa-calendar"></i>
+            <i class="far fa-calendar text-galseid-orange"></i>
           </div>
           <p class="font-display">01 Januari 2023</p>
           <div></div>
@@ -171,146 +83,30 @@
         </div>
       </div>
       <div class="flex items-center w-2/6">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="h-full object-contain">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/art-show-flyer-template-design-8b29337182f22af171999cc1514011c0_screen.jpg?ts=1636987180" alt="Placeholder Promo Image" class="h-40 w-40 object-cover rounded-2xl">
       </div>
     </div>
   </div>
-  {{-- card component --}}
-  <div class="bg-slate-200 rounded-3xl">
-    <div class="flex flex-row p-6 items-center justify-between">
-      <div class="flex flex-col gap-2 my-4">
-        <h3 class="text-slate-500 text-xl font-bold font-display">
-          Nama Event
-        </h3>
-        <div class="grid grid-template gap-x-2 gap-y-1">
-          <div class="flex justify-center items-center">
-            <i class="fas fa-scroll"></i>
-          </div>
-          <p class="font-display">Penyelenggara</p>
-          <div class="flex justify-center items-center">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <p class="font-display">Lokasi</p>
-          <div class="flex justify-center items-center ">
-            <i class="far fa-calendar"></i>
-          </div>
-          <p class="font-display">01 Januari 2023</p>
-          <div></div>
-          <p class="font-bold font-display">00:00-00:00 WIB</p>
-        </div>
-      </div>
-      <div class="flex items-center w-2/6">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="h-full object-contain">
-      </div>
-    </div>
-  </div>
-  {{-- card component --}}
-  <div class="bg-slate-200 rounded-3xl">
-    <div class="flex flex-row p-6 items-center justify-between">
-      <div class="flex flex-col gap-2 my-4">
-        <h3 class="text-slate-500 text-xl font-bold font-display">
-          Nama Event
-        </h3>
-        <div class="grid grid-template gap-x-2 gap-y-1">
-          <div class="flex justify-center items-center">
-            <i class="fas fa-scroll"></i>
-          </div>
-          <p class="font-display">Penyelenggara</p>
-          <div class="flex justify-center items-center">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <p class="font-display">Lokasi</p>
-          <div class="flex justify-center items-center ">
-            <i class="far fa-calendar"></i>
-          </div>
-          <p class="font-display">01 Januari 2023</p>
-          <div></div>
-          <p class="font-bold font-display">00:00-00:00 WIB</p>
-        </div>
-      </div>
-      <div class="flex items-center w-2/6">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="h-full object-contain">
-      </div>
-    </div>
-  </div>
-  {{-- card component --}}
-  <div class="bg-slate-200 rounded-3xl">
-    <div class="flex flex-row p-6 items-center justify-between">
-      <div class="flex flex-col gap-2 my-4">
-        <h3 class="text-slate-500 text-xl font-bold font-display">
-          Nama Event
-        </h3>
-        <div class="grid grid-template gap-x-2 gap-y-1">
-          <div class="flex justify-center items-center">
-            <i class="fas fa-scroll"></i>
-          </div>
-          <p class="font-display">Penyelenggara</p>
-          <div class="flex justify-center items-center">
-            <i class="fas fa-map-marker-alt"></i>
-          </div>
-          <p class="font-display">Lokasi</p>
-          <div class="flex justify-center items-center ">
-            <i class="far fa-calendar"></i>
-          </div>
-          <p class="font-display">01 Januari 2023</p>
-          <div></div>
-          <p class="font-bold font-display">00:00-00:00 WIB</p>
-        </div>
-      </div>
-      <div class="flex items-center w-2/6">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="h-full object-contain">
-      </div>
-    </div>
-  </div>
+  @endfor
 </div>
 
 {{-- artist --}}
 <div class="text-center mt-36 mb-20">
-  <h2 class="text-slate-500 text-3xl font-bold font-display">Seniman</h2>
+  <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Seniman</h2>
 </div>
-  <div class="grid grid-cols-3 gap-x-5 gap-y-20">
+  <div class="grid grid-cols-12 gap-14">
+    @for ($i = 0; $i < 6; $i++)
     {{-- profile --}}
-    <div class="flex flex-col items-center gap-8">
-      <div class="flex items-center h-60 w-60">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="rounded-full object-contain">
+    <div class="flex flex-col col-span-12 sm:col-span-6 md:col-span-4 items-center">
+      <div class="flex items-center p-4 bg-galseid-blur border-4 border-galseid-yellow rounded-full">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Raden_Saleh.jpg" alt="Placeholder Promo Image" class="h-56 w-56 rounded-full object-cover mx-auto">
       </div>
-      <a href="#" class="text-slate-500 text-3xl font-semibold font-display">John Doe</a>
+      <a href="#" class="w-full mt-[-16px] bg-gradient-to-b from-galseid-red-dark to-galseid-red-light  text-white text-2xl font-semibold font-display rounded-t-[90px] rounded-b-[36px] text-center truncate py-4 px-6">
+        John Doe
+      </a>
+      <div class="w-[80%] h-3 bg-gradient-to-r from-galseid-orange to-galseid-yellow rounded-b-full"></div>
     </div>
-    {{-- profile --}}
-    <div class="flex flex-col items-center gap-8">
-      <div class="flex items-center h-60 w-60">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="rounded-full object-contain">
-      </div>
-      <a href="#" class="text-slate-500 text-3xl font-semibold font-display">John Doe</a>
-    </div>
-    {{-- profile --}}
-    <div class="flex flex-col items-center gap-8">
-      <div class="flex items-center h-60 w-60">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="rounded-full object-contain">
-      </div>
-      <a href="#" class="text-slate-500 text-3xl font-semibold font-display">John Doe</a>
-    </div>
-    {{-- profile --}}
-    <div class="flex flex-col items-center gap-8">
-      <div class="flex items-center h-60 w-60">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="rounded-full object-contain">
-      </div>
-      <a href="#" class="text-slate-500 text-3xl font-semibold font-display">John Doe</a>
-    </div>
-    {{-- profile --}}
-    <div class="flex flex-col items-center gap-8">
-      <div class="flex items-center h-60 w-60">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="rounded-full object-contain">
-      </div>
-      <a href="#" class="text-slate-500 text-3xl font-semibold font-display">John Doe</a>
-    </div>
-    {{-- profile --}}
-    <div class="flex flex-col items-center gap-8">
-      <div class="flex items-center h-60 w-60">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="rounded-full object-contain">
-      </div>
-      <a href="#" class="text-slate-500 text-3xl font-semibold font-display">John Doe</a>
-    </div>
+    @endfor;
   </div>
 <div>
   
@@ -318,93 +114,29 @@
 
 {{-- merch --}}
 <div class="text-center mt-36 mb-20">
-  <h2 class="text-slate-500 text-3xl font-bold font-display">Beli Merchandise</h2>
+  <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Merchandise</h2>
 </div>
-<div class="grid grid-cols-4 gap-x-6">
+<div class="grid grid-cols-4 gap-8">
+  @for ($i = 0; $i < 8; $i++)
   {{-- Merch item --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
+  <div class="bg-galseid-blur rounded-2xl border border-solid">
     <div class="flex flex-col p-6 gap-3">
       <div class="flex items-center h-40">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
+        <img src="https://store.nebula.tv/cdn/shop/products/CIG_Mug_-_outside_720x.JPG" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
       </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
+      <h3 class="text-galseid-dark text-xl font-bold font-display">
         Nama Merch
       </h3>
-      <p class="text-slate-500 text-2xl font-display">
+      <p class="text-galseid-dark text-2xl font-display">
         Rp100.000
       </p>
-      <p class="text-slate-500 font-display text-base">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar...
-      </p>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Beli Sekarang
-        <i class="fas fa-external-link-alt"></i>
+      <a href='/#' class="flex flex-row items-center justify-center btn-galseid-red gap-2 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
+        Beli Merch
+        <i class="fas fa-shopping-cart"></i>
       </a>
     </div>
   </div>
-  {{-- Merch item --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
-    <div class="flex flex-col p-6 gap-3">
-      <div class="flex items-center h-40">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
-      </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
-        Nama Merch
-      </h3>
-      <p class="text-slate-500 text-2xl font-display">
-        Rp100.000
-      </p>
-      <p class="text-slate-500 font-display text-base">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar...
-      </p>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Beli Sekarang
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-  {{-- Merch item --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
-    <div class="flex flex-col p-6 gap-3">
-      <div class="flex items-center h-40">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
-      </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
-        Nama Merch
-      </h3>
-      <p class="text-slate-500 text-2xl font-display">
-        Rp100.000
-      </p>
-      <p class="text-slate-500 font-display text-base">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar...
-      </p>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Beli Sekarang
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
-  {{-- Merch item --}}
-  <div class="border-gray-300 rounded-3xl border border-solid">
-    <div class="flex flex-col p-6 gap-3">
-      <div class="flex items-center h-40">
-        <img src="{{ asset('assets/img/image-placeholder.png') }}" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
-      </div>
-      <h3 class="text-slate-500 text-xl font-bold font-display">
-        Nama Merch
-      </h3>
-      <p class="text-slate-500 text-2xl font-display">
-        Rp100.000
-      </p>
-      <p class="text-slate-500 font-display text-base">
-        Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar...
-      </p>
-      <a href='/#' class="flex flex-row items-center justify-center gap-2 bg-slate-500 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Beli Sekarang
-        <i class="fas fa-external-link-alt"></i>
-      </a>
-    </div>
-  </div>
+  @endfor;
 </div>
 
 @endsection

@@ -11,6 +11,18 @@
 }
 
 @layer components {
+  .galseid-title {
+    @apply relative text-galseid-dark text-2xl font-bold font-display after:content-[''] after:w-11 after:border-b-4 after:border-solid after:border-galseid-red-dark after:rounded-full after:block after:text-center after:mx-auto after:mt-1;
+  }
+
+  .galseid-bg-title {
+    @apply inline-block h-12 w-12 bg-gradient-to-tr from-galseid-orange to-galseid-yellow rounded-full mr-[-30px] pt-2;
+  }
+
+  .bg-galseid-blur {
+    @apply bg-gradient-to-br from-white/90 to-white/40 rounded-lg border-t border-t-white border-l border-l-white/80 border-b border-b-white/20 backdrop-blur-xl shadow-xl
+  }
+  
   .btn-galseid-link {
     @apply min-h-[44px] px-4 font-medium text-lg/[44px] text-black rounded-lg hover:bg-black/5 font-header transition-all;
   }
@@ -28,7 +40,7 @@
     background-position: left;
     background-size: 200%;
     border-radius: 12px;
-    box-shadow: 0 6px 30px 0px rgba(239, 195, 0, 0.3);
+    box-shadow: 0 6px 30px 0px rgba(239, 155, 0, 0.3);
     color: white;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
