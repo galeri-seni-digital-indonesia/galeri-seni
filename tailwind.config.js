@@ -22,7 +22,7 @@ export default {
         'galseid-orange': '#E65C00',
         'galseid-red-dark': '#B31217',
         'galseid-red-light': '#E52D27',
-      },
+      }
     },
   },
   plugins: [],

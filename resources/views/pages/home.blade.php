@@ -3,9 +3,9 @@
 @section('main-content')
 
 {{-- heros --}}
-<div class="grid grid-cols-12 gap-4 mt-8 items-center">
-  <div class="col-span-12 md:col-span-5 justify-start">
-    <h1 class="mb-8 text-galseid-dark text-[56px]/[120%] font-bold font-header">
+<div class="grid grid-cols-4 sm:grid-cols-12 gap-8 items-center">
+  <div class="col-span-4 sm:col-span-12 lg:col-span-5 justify-start">
+    <h1 class="mb-8 text-galseid-dark text-[46px]/[120%] md:text-[50px]/[120%] lg:text-[56px]/[120%] font-bold font-header">
       Apresiasi Karya Seni Nusantara Lewat Galse<span class="text-galseid-orange">i</span><span class="text-galseid-red-dark">d</span>
     </h1>
     <p class="mb-8 text-galseid-dark text-lg font-display">
@@ -15,7 +15,7 @@
       Jelajahi Galeri Seni &ensp;<i class="fas fa-long-arrow-alt-right"></i>
     </a>
   </div>
-  <div class="col-span-12 md:col-start-7 md:col-span-6 items-center">
+  <div class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 lg:col-start-7 items-center">
     <img src="{{ asset('assets/img/hero-images.png') }}" alt="Placeholder Promo Image" class="p-5 w-full object-contain">
   </div>
 </div>
@@ -24,10 +24,10 @@
 <div class="text-center mt-36 mb-20">
   <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Galeri Seni</h2>
 </div>
-<div class="grid grid-cols-12 gap-16">
+<div class="grid grid-cols-4 sm:grid-cols-12 gap-8">
   @for ($i = 0; $i < 6; $i++)
   {{-- cards Component --}}
-  <div class="relative col-span-12 sm:col-span-6 md:col-span-4">
+  <div class="relative col-span-4 sm:col-span-6 lg:col-span-4 m-4">
     <object data="{{ asset('assets/img/card-corner-tl.svg') }}" class="absolute h-[70px] w-[70px] z-[-10] mt-[-14px] ms-[-12px]"></object>
     <object data="{{ asset('assets/img/card-corner-bl.svg') }}" class="absolute bottom-0 h-[70px] w-[70px] z-[-10] mb-[-14px] ms-[-12px]"></object>
     <object data="{{ asset('assets/img/card-corner-tr.svg') }}" class="absolute right-0 h-[70px] w-[70px] z-[-10] mt-[-14px] me-[-12px]"></object>
@@ -56,20 +56,23 @@
 <div class="text-center mt-36 mb-20">
   <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Acara Seni</h2>
 </div>
-<div class="grid grid-cols-12 gap-8">
+<div class="grid grid-cols-4 sm:grid-cols-12 gap-8">
   @for ($i = 0; $i < 4; $i++)
   {{-- card component --}}
-  <div class="relative col-span-12 sm:col-span-6">
-    <div class="flex flex-row p-6 items-center justify-between bg-galseid-blur rounded-2xl">
+  <div class="relative col-span-4 sm:col-span-12 lg:col-span-6">
+    <div class="flex flex-wrap flex-row-reverse p-6 items-center justify-center sm:justify-between bg-galseid-blur rounded-2xl">
+      <div class="flex items-center">
+        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/art-show-flyer-template-design-8b29337182f22af171999cc1514011c0_screen.jpg?ts=1636987180" alt="Placeholder Promo Image" class="h-40 w-40 object-cover rounded-2xl">
+      </div>
       <div class="flex flex-col gap-2 my-4">
-        <h3 class="text-galseid-dark text-2xl font-bold font-display">
+        <h3 class="text-galseid-dark text-2xl font-bold font-display truncate">
           Nama Event
         </h3>
-        <div class="grid grid-template gap-x-2 gap-y-1">
+        <div class="grid grid-template gap-x-2 gap-y-1 me-6">
           <div class="flex justify-center items-center">
             <i class="fas fa-scroll text-galseid-orange"></i>
           </div>
-          <p class="text-base font-display">Penyelenggara</p>
+          <p class="text-base font-display truncate">Penyelenggara</p>
           <div class="flex justify-center items-center">
             <i class="fas fa-map-marker-alt text-galseid-orange"></i>
           </div>
@@ -82,9 +85,6 @@
           <p class="font-bold font-display">00:00-00:00 WIB</p>
         </div>
       </div>
-      <div class="flex items-center w-2/6">
-        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/art-show-flyer-template-design-8b29337182f22af171999cc1514011c0_screen.jpg?ts=1636987180" alt="Placeholder Promo Image" class="h-40 w-40 object-cover rounded-2xl">
-      </div>
     </div>
   </div>
   @endfor
@@ -94,10 +94,10 @@
 <div class="text-center mt-36 mb-20">
   <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Seniman</h2>
 </div>
-  <div class="grid grid-cols-12 gap-14">
+  <div class="grid grid-cols-4 sm:grid-cols-12 gap-8">
     @for ($i = 0; $i < 6; $i++)
     {{-- profile --}}
-    <div class="flex flex-col col-span-12 sm:col-span-6 md:col-span-4 items-center">
+    <div class="flex flex-col col-span-4 sm:col-span-6 lg:col-span-4 items-center m-3">
       <div class="flex items-center p-4 bg-galseid-blur border-4 border-galseid-yellow rounded-full">
         <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Raden_Saleh.jpg" alt="Placeholder Promo Image" class="h-56 w-56 rounded-full object-cover mx-auto">
       </div>
@@ -116,22 +116,22 @@
 <div class="text-center mt-36 mb-20">
   <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Merchandise</h2>
 </div>
-<div class="grid grid-cols-4 gap-8">
+<div class="grid col-span-4 sm:grid-cols-12 gap-8">
   @for ($i = 0; $i < 8; $i++)
   {{-- Merch item --}}
-  <div class="bg-galseid-blur rounded-2xl border border-solid">
+  <div class="col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 bg-galseid-blur rounded-2xl border border-solid">
     <div class="flex flex-col p-6 gap-3">
       <div class="flex items-center h-40">
         <img src="https://store.nebula.tv/cdn/shop/products/CIG_Mug_-_outside_720x.JPG" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
       </div>
-      <h3 class="text-galseid-dark text-xl font-bold font-display">
+      <h3 class="text-galseid-dark text-xl font-bold font-display truncate">
         Nama Merch
       </h3>
       <p class="text-galseid-dark text-2xl font-display">
         Rp100.000
       </p>
       <a href='/#' class="flex flex-row items-center justify-center btn-galseid-red gap-2 rounded-xl font-bold py-3 px-8 text-lg text-white hover:bg-slate-700 font-display">
-        Beli Merch
+        Beli
         <i class="fas fa-shopping-cart"></i>
       </a>
     </div>

@@ -4,9 +4,23 @@
 
 @layer base {
   body {
+    position: relative;
     background: #F5F5F5 url('../../public/assets/img/bg-blur.png') repeat center top;
     background-size: cover;
     color: #1d1d1d;
+  }
+
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  #drawerMobile {
+    left: 0;
+  }
+
+  #drawerMobile.close-drawer {
+    left: -100%;
   }
 }
 
@@ -24,11 +38,11 @@
   }
   
   .btn-galseid-link {
-    @apply min-h-[44px] px-4 font-medium text-lg/[44px] text-black rounded-lg hover:bg-black/5 font-header transition-all;
+    @apply inline-block min-h-[44px] px-3 font-medium text-lg/[44px] text-black rounded-lg hover:bg-black/5 font-header transition-all;
   }
 
   .btn-galseid-social {
-    @apply bg-white/10 hover:bg-white/0 hover:border hover:border-galseid-yellow text-2xl flex items-center justify-center py-3 px-3 rounded-lg w-11 h-11 transition-all;
+    @apply inline-block bg-white/10 hover:bg-white/0 hover:border hover:border-galseid-yellow text-2xl/[42px] justify-center text-center rounded-lg w-11 h-11 m-1 transition-all;
   }
 
   .btn-galseid-yellow {
@@ -70,6 +84,56 @@
     background-position: right;
     font-size: 21px;
   }
+
+
+  /* BEGIN: Hamburger Animated Menu */
+
+  .hamburger-menu-container {
+    transition: all .5s ease-in-out;
+  }
+
+  .hamburger-menu-animated {
+    width: 42px;
+    height: 6px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, theme('colors.galseid-red-dark'), theme('colors.galseid-orange'), theme('colors.galseid-yellow'));
+    /* box-shadow: 0 6px 30px 0px rgba(239, 155, 0, 0.3); */
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+
+  .hamburger-menu-animated::before,
+  .hamburger-menu-animated::after {
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 6px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, theme('colors.galseid-dark'), #303030);
+    /* box-shadow: 0 6px 30px 0px rgba(239, 155, 0, 0.3); */
+    transition: all .5s ease-in-out;
+  }
+
+  .hamburger-menu-animated::before {
+    transform: translate(-8px,-14px);
+  }
+  .hamburger-menu-animated::after{
+    transform: translate(-8px,14px);
+  }
+
+  .hamburger-menu-container.open .hamburger-menu-animated {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .hamburger-menu-container.open .hamburger-menu-animated::before {
+    transform: rotate(45deg) translate(35px,-35px);
+  }
+  .hamburger-menu-container.open .hamburger-menu-animated::after {
+    transform: rotate(-45deg) translate(35px,35px);
+  }
+
+  /* END: Hamburger Animated Menu */
 }
 
 .grid-template{

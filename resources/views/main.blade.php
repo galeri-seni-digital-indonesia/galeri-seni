@@ -17,10 +17,12 @@
   <body>
     @include('partials.navbar')
     
-    <main class="px-28 mt-12 mb-40">
+    <main id="mainContent" class="px-14 md:px-24 lg:px-28 mt-0 sm:mt-9 mb-40">
       @yield('main-content')
     </main>
     
     @include('partials.footer')
+
+    @vite('resources/js/app.js')
   </body>
 </html>
