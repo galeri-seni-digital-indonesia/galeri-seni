@@ -40,9 +40,9 @@
         </div>
         <div class="flex flex-row gap-2 items-center text-galseid-red-dark font-bold">
           <i class="fas fa-paint-brush"></i>
-          <p class="text-lg font-header">Agus Djaya</p>
+          <p class="text-lg font-header truncate">Agus Djaya</p>
         </div>
-        <h3 class="text-galseid-dark text-2xl font-bold font-display mb-2">
+        <h3 class="text-galseid-dark text-2xl font-bold font-display mb-2 truncate">
           Kuda Lumping
         </h3>
         <a href='/#' class="btn-galseid-red text-center">
@@ -66,7 +66,7 @@
         <div class="flex items-center">
           <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/art-show-flyer-template-design-8b29337182f22af171999cc1514011c0_screen.jpg?ts=1636987180" alt="Placeholder Promo Image" class="h-40 w-40 object-cover rounded-2xl">
         </div>
-        <div class="flex flex-col gap-2 my-4">
+        <div class="flex flex-col gap-2 my-4 w-full sm:w-1/2">
           <h3 class="text-galseid-dark text-2xl font-bold font-display truncate">
             Nama Event
           </h3>
@@ -103,7 +103,7 @@
         <div class="flex items-center p-4 bg-galseid-blur border-4 border-galseid-yellow rounded-full">
           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Raden_Saleh.jpg" alt="Placeholder Promo Image" class="h-56 w-56 rounded-full object-cover mx-auto">
         </div>
-        <a href="#" class="w-full mt-[-16px] bg-gradient-to-b from-galseid-red-dark to-galseid-red-light  text-white text-2xl font-semibold font-display rounded-t-[90px] rounded-b-[36px] text-center truncate py-4 px-6">
+        <a href="#" class="w-full mt-[-16px] bg-gradient-to-b from-galseid-red-dark to-galseid-red-light  text-white text-2xl font-semibold font-display rounded-t-[90px] rounded-b-[36px] text-center truncate py-4 px-7">
           John Doe
         </a>
         <div class="w-[80%] h-3 bg-gradient-to-r from-galseid-orange to-galseid-yellow rounded-b-full"></div>

@@ -2,7 +2,7 @@
 
 @section('main-content')
 
-<div class="grid grid-cols-4 md:grid-cols-12 mt-3 md:mt-24 text-center px-0 md:px-24 lg:px-28">
+<div class="grid grid-cols-4 md:grid-cols-12 mt-3 md:mt-20 text-center px-0 md:px-24 lg:px-28">
   <div class="col-span-4 md:col-span-12 lg:col-span-10 xl:col-span-8 lg:col-start-2 xl:col-start-3 h-fit">
     <h1 class="text-galseid-dark text-3xl md:text-4xl font-bold font-header px-20 mb-10">
       Penangkapan Pangeran Diponegoro <span class="text-galseid-orange">(<span class="text-galseid-red-dark">1857</span>)</span>
@@ -39,10 +39,12 @@
       </div>
       <div class="paragraphs text-galseid-dark text-lg font-display text-justify mt-10 mb-20">
         <div class="h-2 w-24 bg-gradient-to-r from-galseid-orange to-galseid-yellow rounded-full mt-16 mb-8 mx-auto"></div>
+        {{-- BEGIN: Ganti paragraf di sini --}}
         <p>Penangkapan Pangeran Diponegoro (Belanda: Gevangenname van Prins Diponegoro) adalah sebuah lukisan 1857 karya Raden Saleh, yang menggambarkan ditangkapnya Pangeran Diponegoro oleh Letnan Jenderal Hendrik Merkus de Kock pada 28 Maret 1830. Pada tahun 1829-1851, Raden Saleh, di bawah naungan pemerintah Hindia Belanda, tinggal di Eropa, di mana ia menerima pendidikan seni. Setelah kembali ke tanah airnya, dia memutuskan untuk mempraktekkan apa yang telah dia pelajari di Eropa dan dengan demikian berkontribusi pada modernisasi Jawa. Untuk gambaran yang direncanakannya, Raden Saleh memilih plot dari sejarah Jawa, yaitu penyerahan pemimpin pemberontakan Jawa dari Diponegoro kepada pasukan kolonial di bawah komando Letnan Jenderal Hendrik Mercus de Kock yang terjadi pada tahun 1830.</p>
         <p>Diketahui keluarga Saleh mendukung Diponegoro, banyak kerabatnya ikut serta dalam pemberontakan. Menurut kritikus, sehubungan dengan ini, Saleh ingin menampilkan versinya sendiri, non-kolonial — berbeda dengan karya oleh seniman Belanda Nicolaas Pieneman dalam lukisan berjudul Penyerahan Pangeran Diponegoro kepada Jenderal De Kock (1830-1835).</p>
         <p>Dalam lukisan kedua seniman itu, Diponegoro berdiri di sebelah de Kock di tangga sebuah rumah kolonial, dikelilingi oleh perwira Belanda dan orang Jawa yang dilucuti. Namun Saleh mengisi karyanya dengan suasana kesedihan, menggambarkan Diponegoro dan de Kock sejajar dengan latar fajar hari baru, sehingga mengisyaratkan, menurut para kritikus, pembebasan masa depan Jawa dari kolonialisme.</p>
         <p>Saleh melukis lukisan itu pada tahun 1856-1857, setelah itu ia secara pribadi menyerahkannya kepada Raja Willem III dari Belanda. Pada tahun-tahun berikutnya, kanvas ini disimpan di Istana Het Loo, Den Haag. Pada tahun 1978, lukisan itu disumbangkan kepada pemerintah Indonesia yang sudah merdeka, setelah itu dipamerkan di Museum Nasional Indonesia dan Istana Kepresidenan di Jakarta. Karena lukisan tersebut berada dalam keadaan yang buruk, lukisan tersebut sepenuhnya direstorasi pada tahun 2013. Kini lukisan tersebut menjadi bagian dari koleksi Museum Kepresidenan.</p>
+        {{-- END: Ganti paragraf di sini --}}
       </div>
       <div class="bg-galseid-red-dark/10 border-2 border-galseid-red-dark rounded-xl">
         <div class="w-fit bg-gradient-to-r from-galseid-red-dark to-galseid-red-light text-white text-lg font-header font-bold rounded-md mt-[-18px] mx-auto py-0.5 px-8">

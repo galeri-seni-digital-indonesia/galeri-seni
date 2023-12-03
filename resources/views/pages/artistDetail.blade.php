@@ -14,12 +14,16 @@
       <h2 class="text-2xl font-bold font-display text-start mb-3">
         Biodata
       </h2>
-      <p class="text-base pb-12 font-display text-justify">
-        Ut facilisis mauris quis ullamcorper vehicula. Sed congue congue urna. Nullam a bibendum ex, vel scelerisque nibh. 
-        Vestibulum mattis, ipsum mattis porttitor vulputate, libero urna maximus erat, id ultricies augue arcu vitae enim. 
-        Nunc quis dui vel lectus imperdiet consequat in auctor quam. Aliquam eu semper ante, eget tempor erat. 
-        Morbi id ligula vel ex imperdiet accumsan ut et tellus. Phasellus dictum eu enim eu consectetur.
-      </p>
+      <div class="paragraphs text-base pb-8 font-display text-justify">
+        {{-- BEGIN: Ganti paragraf di sini --}}
+        <p class="">
+          Ut facilisis mauris quis ullamcorper vehicula. Sed congue congue urna. Nullam a bibendum ex, vel scelerisque nibh. 
+          Vestibulum mattis, ipsum mattis porttitor vulputate, libero urna maximus erat, id ultricies augue arcu vitae enim. 
+          Nunc quis dui vel lectus imperdiet consequat in auctor quam. Aliquam eu semper ante, eget tempor erat. 
+          Morbi id ligula vel ex imperdiet accumsan ut et tellus. Phasellus dictum eu enim eu consectetur.
+        </p>
+        {{-- END: Ganti paragraf di sini --}}
+      </div>
     </div>
   </div>
 </div>

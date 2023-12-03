@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 @layer base {
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: theme('colors.galseid-yellow');
+    background: theme('colors.galseid-red-light');
+  }
+
+  ::selection {
+    color: theme('colors.galseid-yellow');
+    background: theme('colors.galseid-red-light');
+  }
+
   body {
     position: relative;
     background: #F5F5F5 url('../../public/assets/img/bg-blur.png') repeat center top;
