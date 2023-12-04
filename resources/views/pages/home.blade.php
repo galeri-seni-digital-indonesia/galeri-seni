@@ -2,13 +2,13 @@
 
 @section('main-content')
 
-<div class="px-14 md:px-24 lg:px-28">
+<div class="xl:container xl:mx-auto px-14 md:px-24 lg:px-28">
 
   {{-- heros --}}
   <div class="grid grid-cols-4 sm:grid-cols-12 gap-8 items-center">
-    <div class="col-span-4 sm:col-span-12 lg:col-span-5 justify-start">
+    <div class="col-span-4 sm:col-span-12 lg:col-span-6 xl:col-span-5 justify-start">
       <h1 class="mb-8 text-galseid-dark text-[46px]/[120%] md:text-[50px]/[120%] lg:text-[56px]/[120%] font-bold font-header">
-        Apresiasi Karya Seni Nusantara Lewat Galse<span class="text-galseid-orange">i</span><span class="text-galseid-red-dark">d</span>
+        Apresiasi Karya Seni Nusantara Lewat Galse<span class="bg-gradient-to-t from-galseid-orange to-galseid-yellow bg-clip-text text-transparent">i</span><span class="bg-gradient-to-t from-galseid-red-dark to-galseid-red-light bg-clip-text text-transparent">d</span>
       </h1>
       <p class="mb-8 text-galseid-dark text-lg font-display">
         <b>Galseid</b> merupakan <b>galeri seni digital</b> yang memamerkan karya-karya seni Indonesia untuk meningkatkan kecintaan terhadap <b>seni nusantara</b>.
@@ -38,7 +38,7 @@
         <div class="flex items-center h-64 mb-2">
           <img src="https://gni.kemdikbud.go.id/_next/image?url=%2Fuploads%2FAgus_Djaya_Kuda_Lumping_e378417837.jpg&w=1920&q=60" alt="Placeholder Promo Image" class="w-full h-full rounded-xl object-cover">
         </div>
-        <div class="flex flex-row gap-2 items-center text-galseid-red-dark font-bold">
+        <div class="flex flex-row gap-2 items-center font-bold bg-gradient-to-t from-galseid-red-dark to-galseid-red-light bg-clip-text text-transparent">
           <i class="fas fa-paint-brush"></i>
           <p class="text-lg font-header truncate">Agus Djaya</p>
         </div>
@@ -62,25 +62,25 @@
     @for ($i = 0; $i < 4; $i++)
     {{-- card component --}}
     <div class="relative col-span-4 sm:col-span-12 lg:col-span-6">
-      <div class="flex flex-wrap flex-row-reverse p-6 items-center justify-center sm:justify-between bg-galseid-blur rounded-2xl">
-        <div class="flex items-center">
+      <div class="flex flex-wrap flex-row-reverse p-6 justify-center sm:justify-between bg-galseid-blur rounded-2xl">
+        <div class="flex mb-4 sm:mb-0">
           <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/art-show-flyer-template-design-8b29337182f22af171999cc1514011c0_screen.jpg?ts=1636987180" alt="Placeholder Promo Image" class="h-40 w-40 object-cover rounded-2xl">
         </div>
-        <div class="flex flex-col gap-2 my-4 w-full sm:w-1/2">
+        <div class="flex flex-col gap-2 my-2 w-full sm:w-1/2 min-[530px]:w-1/2">
           <h3 class="text-galseid-dark text-2xl font-bold font-display truncate">
             Nama Event
           </h3>
           <div class="grid grid-template gap-x-2 gap-y-1 me-6">
             <div class="flex justify-center items-center">
-              <i class="fas fa-scroll text-galseid-orange"></i>
+              <i class="fas fa-scroll bg-gradient-to-tr from-galseid-orange to-galseid-yellow bg-clip-text text-transparent"></i>
             </div>
             <p class="text-base font-display truncate">Penyelenggara</p>
             <div class="flex justify-center items-center">
-              <i class="fas fa-map-marker-alt text-galseid-orange"></i>
+              <i class="fas fa-map-marker-alt bg-gradient-to-tr from-galseid-orange to-galseid-yellow bg-clip-text text-transparent"></i>
             </div>
             <p class="font-display">Lokasi</p>
             <div class="flex justify-center items-center ">
-              <i class="far fa-calendar text-galseid-orange"></i>
+              <i class="far fa-calendar bg-gradient-to-tr from-galseid-orange to-galseid-yellow bg-clip-text text-transparent"></i>
             </div>
             <p class="font-display">01 Januari 2023</p>
             <div></div>
