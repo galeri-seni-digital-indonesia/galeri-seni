@@ -19,8 +19,10 @@ return new class extends Migration
             $table->string('mediaLukis');
             $table->string('gambar');
             $table->text('deskripsi');
+            $table->string('sumber');
             $table->foreignId('artistId');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

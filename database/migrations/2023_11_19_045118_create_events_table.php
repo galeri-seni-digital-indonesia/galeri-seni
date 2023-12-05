@@ -20,7 +20,8 @@ return new class extends Migration
             $table->string('gambar');
             $table->text('deskripsi');
             $table->string('linkEvent');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 

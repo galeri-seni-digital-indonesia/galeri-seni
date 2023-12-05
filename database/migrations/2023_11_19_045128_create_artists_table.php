@@ -16,7 +16,8 @@ return new class extends Migration
             $table->string('nama');
             $table->string('gambar');
             $table->text('biodata');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 
