@@ -18,7 +18,8 @@ return new class extends Migration
             $table->text('deskripsi');
             $table->integer('harga');
             $table->string('link');
-            $table->timestamps();
+            $table->timestamp('created_at')->useCurrent();
+            $table->timestamp('updated_at')->useCurrent();
         });
     }
 
