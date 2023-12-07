@@ -26,9 +26,9 @@
   <div class="text-center mt-36 mb-20">
     <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Galeri Seni</h2>
   </div>
-  <div class="grid grid-cols-4 sm:grid-cols-12 gap-8">
-    @for ($i = 0; $i < 6; $i++)
-    {{-- cards Component --}}
+  <div id="artData" class="grid grid-cols-4 sm:grid-cols-12 gap-8">
+    {{-- @for ($i = 0; $i < 6; $i++)
+    // cards Component
     <div class="relative col-span-4 sm:col-span-6 lg:col-span-4 m-4">
       <object data="{{ asset('assets/img/card-corner-tl.svg') }}" class="absolute h-[70px] w-[70px] z-[-10] mt-[-14px] ms-[-12px]"></object>
       <object data="{{ asset('assets/img/card-corner-bl.svg') }}" class="absolute bottom-0 h-[70px] w-[70px] z-[-10] mb-[-14px] ms-[-12px]"></object>
@@ -51,7 +51,7 @@
         </a>
       </div>
     </div>
-    @endfor
+    @endfor --}}
   </div>
 
   {{-- event --}}

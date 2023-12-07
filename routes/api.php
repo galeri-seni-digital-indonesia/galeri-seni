@@ -39,3 +39,5 @@ Route::any('/{any}', function (ServerRequestInterface $request) {
     $response = $api->handle($request);
     return $response;
 })->where('any', '.*');
+
+Route::get('/arts', 'ArtController@index');

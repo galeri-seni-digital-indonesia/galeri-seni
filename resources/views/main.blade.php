@@ -24,5 +24,6 @@
     @include('partials.footer')
 
     @vite('resources/js/app.js')
+    @vite('resources/js/art-api.js')
   </body>
 </html>
