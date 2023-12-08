@@ -24,6 +24,9 @@
     @include('partials.footer')
 
     @vite('resources/js/app.js')
-    @vite('resources/js/art-api.js')
+    {{-- @vite('resources/js/art-api.js')
+    @vite('resources/js/event-api.js')
+    @vite('resources/js/artist-api.js')
+    @vite('resources/js/merch-api.js') --}}
   </body>
 </html>

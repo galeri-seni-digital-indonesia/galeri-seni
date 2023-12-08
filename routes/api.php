@@ -41,3 +41,4 @@ Route::any('/{any}', function (ServerRequestInterface $request) {
 })->where('any', '.*');
 
 Route::get('/arts', 'ArtController@index');
+Route::get('/events', 'EventController@index');
