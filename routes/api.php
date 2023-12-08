@@ -27,8 +27,8 @@ Route::get('/v1/records', function () {
 
 Route::any('/{any}', function (ServerRequestInterface $request) {
     $config = new Config([
-        'username' => env('DB_USERNAME','root'),
-        'password' => env('DB_PASSWORD', ''),
+        'username' => 'admin',
+        'password' => '_Mabouya00004',
         'database' => 'galeri_seni',
         'basePath' => '/api/v1',
         'debug' => true,
