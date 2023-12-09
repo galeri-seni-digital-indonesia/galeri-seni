@@ -15,7 +15,7 @@ async function fetchEventsData() {
 function updateEventsUI(eventsData) {
   // Assuming eventsData is an array containing events data
   const eventsContainer = document.getElementById("eventData");
-  moment.locale("id");
+  // moment.locale("id");
 
   eventsData.forEach(async (event) => {
     const formattedDate = moment(event.tanggal).format("D MMMM YYYY");
@@ -28,9 +28,9 @@ function updateEventsUI(eventsData) {
           <img src="${event.gambar}" alt="${event.nama}" class="h-40 w-40 object-cover rounded-2xl">
         </div>
         <div class="flex flex-col gap-2 my-2 w-full sm:w-1/2 min-[530px]:w-1/2">
-          <a href="${event.linkEvent}" class="text-galseid-dark text-2xl font-bold font-display truncate">
+          <h3 class="w-full"><a href="/acara/${event.id}" class="text-galseid-dark text-l font-bold font-display truncate">
             ${event.nama}
-          </a>
+          </a></h3>
           <div class="grid grid-template gap-x-2 gap-y-1 me-6">
             <div class="flex justify-center items-center">
               <i class="fas fa-scroll bg-gradient-to-tr from-galseid-orange to-galseid-yellow bg-clip-text text-transparent"></i>

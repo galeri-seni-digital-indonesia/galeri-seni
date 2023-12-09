@@ -9,6 +9,10 @@ export default {
     "./resources/views/pages/home.blade.php",
     "./resources/views/partials/footer.blade.php",
     "./resources/views/partials/navbar.blade.php",
+    "./resources/js/art-api.js",
+    "./resources/js/artist-api.js",
+    "./resources/js/event-api.js",
+    "./resources/js/merch-api.js"
   ],
   theme: {
     fontFamily: {

@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArtController;
+use App\Http\Controllers\ArtistController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\MerchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +46,8 @@ Route::get('/merch', function () {
         "title" => "Merchandise",
     ]);
 });
+
+Route::get('/galeri/{id}', [ArtController::class, 'show']);
+// Route::get('/acara/{id}', [ArtController::class, 'show']);
+// Route::get('/seniman/{id}', [ArtController::class, 'show']);
+// Route::get('/merch/{id}', [ArtController::class, 'show']);

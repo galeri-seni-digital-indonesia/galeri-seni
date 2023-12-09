@@ -27,7 +27,7 @@
     <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Galeri Seni</h2>
   </div>
   <div id="artData" class="grid grid-cols-4 sm:grid-cols-12 gap-8">
-
+    
   </div>
 
   {{-- event --}}
@@ -35,7 +35,7 @@
     <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Acara Seni</h2>
   </div>
   <div id="eventData" class="grid grid-cols-4 sm:grid-cols-12 gap-8 items-center">
-  
+    
   </div>
 
   {{-- artist --}}
@@ -54,7 +54,7 @@
     <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Merchandise</h2>
   </div>
   <div id="merchData" class="grid col-span-4 sm:grid-cols-12 gap-8">
-  
+    
   </div>
   
 </div>

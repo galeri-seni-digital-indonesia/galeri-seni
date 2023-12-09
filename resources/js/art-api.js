@@ -20,6 +20,12 @@ async function fetchArtistDetails(artistId) {
   }
 }
 
+function redirectToArtDetailPage(artId) {
+  // Assuming your art detail page URL follows the pattern '/art/{artId}'
+  const artDetailPageUrl = `/art/${artId}`;
+  window.location.href = artDetailPageUrl;
+}
+
 // update UI
 function updateArtsUI(artsData) {
   // Assuming artsData is an array containing arts data
@@ -42,7 +48,7 @@ function updateArtsUI(artsData) {
           <p class="text-lg font-header truncate">${artistDetails.nama}</p>
         </div>
         <h3 class="text-galseid-dark text-2xl font-bold font-display mb-2 truncate">${art.nama}</h3>
-        <a href='${art.sumber}' class="btn-galseid-red text-center">
+        <a href='/galeri/${art.id}' class="btn-galseid-red text-center" onclick="redirectToArtDetailPage(${art.id})">
           Detail&nbsp;
           <i class="fas fa-external-link-alt"></i>
         </a>
