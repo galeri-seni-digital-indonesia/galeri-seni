@@ -30,6 +30,7 @@ Route::any('/{any}', function (ServerRequestInterface $request) {
         'username' => env('DB_USERNAME','root'),
         'password' => env('DB_PASSWORD', ''),
         'database' => env('DB_DATABASE','galeri_seni'),
+        'address'  => env('DB_HOST', '127.0.0.1'),
         'basePath' => '/api/v1',
         'debug' => true,
         'tables' => 'arts,artists,events,merchs',
