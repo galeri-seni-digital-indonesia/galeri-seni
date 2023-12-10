@@ -3,15 +3,25 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
+use GuzzleHttp\Client;
 
 class ArtController extends Controller
 {
     public function show($id)
     {
-        $response = Http::get("http://127.0.0.1:8000/api/v1/records/arts/{$id}", ['timeout' => 60]);
-        $art = $response->json();
 
-        return view('pages.artDetail', compact('art'));
+        $client = new Client(); //GuzzleHttp\Client
+        $url = "https://galseid.wip.la/api/v1/records/arts/{$id}";
+
+
+        $response = $client->request('GET', $url, [
+            'verify'  => false,
+        ]);
+
+        $art = json_decode($response->getBody(), true);
+        
+        $title = isset($art['nama']) ? $art['nama'] : 'Art Detail';
+
+        return view('pages.artDetail', compact('art'))->with('title', $title);
     }
 }

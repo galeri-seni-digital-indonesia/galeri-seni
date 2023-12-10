@@ -23,40 +23,45 @@
   </div>
 
   {{-- art --}}
-  <div class="text-center mt-36 mb-20">
-    <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Galeri Seni</h2>
-  </div>
-  <div id="artData" class="grid grid-cols-4 sm:grid-cols-12 gap-8">
-    
-  </div>
+  <section id="galeri">
+    <div class="text-center mt-36 mb-20">
+      <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Galeri Seni</h2>
+    </div>
+    <div id="artData" class="grid grid-cols-4 sm:grid-cols-12 gap-8">
+      
+    </div>
+  </section>
 
   {{-- event --}}
-  <div class="text-center mt-36 mb-20">
-    <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Acara Seni</h2>
-  </div>
-  <div id="eventData" class="grid grid-cols-4 sm:grid-cols-12 gap-8 items-center">
-    
-  </div>
-
+  <section id="acara">
+    <div class="text-center mt-36 mb-20">
+      <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Acara Seni</h2>
+    </div>
+    <div id="eventData" class="grid grid-cols-4 sm:grid-cols-12 gap-8 items-center">
+      
+    </div>
+  </section>
+  
   {{-- artist --}}
-  <div class="text-center mt-36 mb-20">
-    <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Seniman</h2>
-  </div>
-  <div id="artistData" class="grid grid-cols-4 sm:grid-cols-12 gap-8">
-    
-  </div>
-  <div>
-    
-  </div>
+  <section id="seniman">
+    <div class="text-center mt-36 mb-20">
+      <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Seniman</h2>
+    </div>
+    <div id="artistData" class="grid grid-cols-4 sm:grid-cols-12 gap-8">
+      
+    </div>
+  </section>
+  
 
   {{-- merch --}}
-  <div class="text-center mt-36 mb-20">
-    <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Merchandise</h2>
-  </div>
-  <div id="merchData" class="grid col-span-4 sm:grid-cols-12 gap-8">
-    
-  </div>
-  
+  <section id="merch">
+    <div class="text-center mt-36 mb-20">
+      <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Merchandise</h2>
+    </div>
+    <div id="merchData" class="grid col-span-4 sm:grid-cols-12 gap-8">
+      
+    </div>
+  </section>
 </div>
 
 @endsection

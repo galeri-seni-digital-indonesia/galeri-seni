@@ -41,7 +41,9 @@
         <div class="paragraphs text-galseid-dark text-lg font-display text-justify mt-10 mb-20">
           <div class="h-2 w-24 bg-gradient-to-r from-galseid-orange to-galseid-yellow rounded-full mt-16 mb-8 mx-auto"></div>
           {{-- BEGIN: Ganti paragraf di sini --}}
-          {{ $art['deskripsi'] }}
+          <p>
+            {{ $art['deskripsi'] }}
+          </p>
           {{-- END: Ganti paragraf di sini --}}
         </div>
         <div class="bg-galseid-red-dark/10 border-2 border-galseid-red-dark rounded-xl">
@@ -80,5 +82,7 @@
   fetchArtistName(artistId)
     .then(updateArtistName)
     .catch(error => console.error('Error:', error));
+
+  document.title = `GalseId | {{ $title }}`;
 </script>
 @endsection

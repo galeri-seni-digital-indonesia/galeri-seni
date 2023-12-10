@@ -48,6 +48,6 @@ Route::get('/merch', function () {
 });
 
 Route::get('/galeri/{id}', [ArtController::class, 'show']);
-// Route::get('/acara/{id}', [ArtController::class, 'show']);
-// Route::get('/seniman/{id}', [ArtController::class, 'show']);
-// Route::get('/merch/{id}', [ArtController::class, 'show']);
+Route::get('/acara/{id}', [EventController::class, 'show']);
+Route::get('/seniman/{id}', [ArtistController::class, 'show']);
+Route::get('/merch/{id}', [MerchController::class, 'show']);
