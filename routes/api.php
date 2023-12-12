@@ -29,7 +29,7 @@ Route::any('/{any}', function (ServerRequestInterface $request) {
     $config = new Config([
         'username' => env('DB_USERNAME','root'),
         'password' => env('DB_PASSWORD', ''),
-        'database' => 'galeri_seni',
+        'database' => env('DB_DATABASE','galeri_seni'),
         'basePath' => '/api/v1',
         'debug' => true,
         'tables' => 'arts,artists,events,merchs',
