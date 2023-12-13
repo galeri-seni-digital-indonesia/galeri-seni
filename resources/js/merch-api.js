@@ -1,6 +1,6 @@
 async function fetchMerchsData() {
   try {
-    const response = await fetch('http://galseid.wip.la/api/v1/records/merchs');
+    const response = await fetch('https://www.galseid.wip.la/api/v1/records/merchs');
     const data = await response.json();
     return data.records;
   } catch (error) {
