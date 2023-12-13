@@ -1,6 +1,6 @@
 async function fetchArtistsData() {
   try {
-    const response = await fetch('http://127.0.0.1:8000/api/v1/records/artists');
+    const response = await fetch('http://galseid.wip.la/api/v1/records/artists');
     const data = await response.json();
     return data.records;
   } catch (error) {
