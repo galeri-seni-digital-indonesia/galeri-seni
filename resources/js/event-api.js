@@ -2,7 +2,7 @@ import moment from "moment/moment";
 
 async function fetchEventsData() {
   try {
-    const response = await fetch('http://127.0.0.1:8000/api/v1/records/events');
+    const response = await fetch('https://www.galseid.wip.la/api/v1/records/events');
     const data = await response.json();
     return data.records;
   } catch (error) {
