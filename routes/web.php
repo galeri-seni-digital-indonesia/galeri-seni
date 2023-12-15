@@ -21,7 +21,7 @@ Route::get('/', function () {
     return view('pages/home', [
         "title" => "Home",
     ]);
-});
+})->name('Home');
 
 Route::get('/galeri', function () {
     return view('pages/artDetail', [

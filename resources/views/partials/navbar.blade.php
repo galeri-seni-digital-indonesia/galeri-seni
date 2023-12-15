@@ -20,20 +20,20 @@
     <div class="col-span-4 md:col-span-6 lg:col-span-8 flex ms-auto">
       <nav id="drawer" class="hidden md:block items-center">
         <ul class="flex items-center gap-8">
-          <li class="hidden lg:block btn-galseid-link"><a href="#galeri">Galeri</a></li>
-          <li class="hidden lg:block btn-galseid-link"><a href="#acara">Acara</a></li>
-          <li class="hidden lg:block btn-galseid-link"><a href="#seniman">Seniman</a></li>
-          <li><a id="btnMerch" class="btn-galseid-yellow transition-all duration-300" href="#merch">Beli Merch <i class="fas fa-coffee"></i></a></li>
+          <li class="hidden lg:block btn-galseid-link"><a href="{{ route('Home') }}#galeri">Galeri</a></li>
+          <li class="hidden lg:block btn-galseid-link"><a href="{{ route('Home') }}#acara">Acara</a></li>
+          <li class="hidden lg:block btn-galseid-link"><a href="{{ route('Home') }}#seniman">Seniman</a></li>
+          <li><a id="btnMerch" class="btn-galseid-yellow transition-all duration-300" href="{{ route('Home') }}#merch">Beli Merch <i class="fas fa-coffee"></i></a></li>
         </ul>
       </nav>
     </div>
     <nav id="drawerMobile" class="col-span-4 close-drawer absolute block mt-16 transition-all duration-300">
       {{-- <div class="bg-black/30 w-screen h-screen fixed delay-900"></div> --}}
       <ul class="items-center bg-galseid-blur shadow-2xl p-5 m-8">
-        <li class="block btn-galseid-link mb-2"><a href="#galeri">Galeri</a></li>
-        <li class="block btn-galseid-link mb-2"><a href="#acara">Acara</a></li>
-        <li class="block btn-galseid-link mb-3"><a href="#seniman">Seniman</a></li>
-        <li><a class="inline-block btn-galseid-yellow" href="#merch">Beli Merch <i class="fas fa-coffee"></i></a></li>
+        <li class="block btn-galseid-link mb-2"><a href="{{ route('Home') }}#galeri">Galeri</a></li>
+        <li class="block btn-galseid-link mb-2"><a href="{{ route('Home') }}#acara">Acara</a></li>
+        <li class="block btn-galseid-link mb-3"><a href="{{ route('Home') }}#seniman">Seniman</a></li>
+        <li><a class="inline-block btn-galseid-yellow" href="{{ route('Home') }}#merch">Beli Merch <i class="fas fa-coffee"></i></a></li>
       </ul>
     </nav>
   </div>

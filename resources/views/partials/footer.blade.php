@@ -8,10 +8,10 @@
     <div class="col-span-4 sm:col-span-12 lg:col-span-5 text-center">
       <nav id="drawer" class="">
         <ul class="">
-          <li class="btn-galseid-link text-white hover:bg-white/10"><a href="#galeri">Galeri</a></li>
-          <li class="btn-galseid-link text-white hover:bg-white/10"><a href="#acara">Acara</a></li>
-          <li class="btn-galseid-link text-white hover:bg-white/10"><a href="#seniman">Seniman</a></li>
-          <li class="btn-galseid-link text-white hover:bg-white/10"><a href="#merch">Merch</a></li>
+          <li class="btn-galseid-link text-white hover:bg-white/10"><a href="{{ route('Home') }}#galeri">Galeri</a></li>
+          <li class="btn-galseid-link text-white hover:bg-white/10"><a href="{{ route('Home') }}#acara">Acara</a></li>
+          <li class="btn-galseid-link text-white hover:bg-white/10"><a href="{{ route('Home') }}#seniman">Seniman</a></li>
+          <li class="btn-galseid-link text-white hover:bg-white/10"><a href="{{ route('Home') }}#merch">Merch</a></li>
         </ul>
       </nav>
     </div>
