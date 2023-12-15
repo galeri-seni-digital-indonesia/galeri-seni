@@ -32,7 +32,7 @@ function updateMerchsUI(merchsData) {
     <div class="col-span-4 sm:col-span-6 md:col-span-4 lg:col-span-3 bg-galseid-blur rounded-2xl border border-solid">
       <div class="flex flex-col p-6 gap-3">
         <div class="flex items-center h-40">
-          <img src="${merch.gambar}" alt="${merch.nama}" class="w-full h-full rounded-xl object-cover">
+          <img src="/assets/img/Image-placeholder.png" data-src="${merch.gambar}" alt="${merch.nama}" class="lazyload w-full h-full rounded-xl object-cover">
         </div>
         <h3 class="text-galseid-dark text-l font-bold font-display truncate">
           ${merch.nama}
