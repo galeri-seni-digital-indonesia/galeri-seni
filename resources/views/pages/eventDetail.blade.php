@@ -52,11 +52,15 @@
     </div>
   </div>
 </div>
+
 <script>
   document.title = `GalseId | {{ $event['nama'] }}`;
 </script>
+
+@vite('resources/js/utils/event-details.js')
+
 <script>
   const eventDate = @json($event['tanggal']);
 </script>
-<script type="module" src="{{ asset('assets/js/event-details.js') }}"></script>
+
 @endsection

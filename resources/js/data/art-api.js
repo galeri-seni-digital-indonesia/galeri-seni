@@ -1,6 +1,8 @@
+import API_ENDPOINTS from "../globals/api-endpoints";
+
 async function fetchArtsData() {
   try {
-    const response = await fetch('https://www.galseid.wip.la/api/v1/records/arts');
+    const response = await fetch(API_ENDPOINTS.ART);
     const data = await response.json();
     return data.records;
   } catch (error) {
@@ -11,7 +13,7 @@ async function fetchArtsData() {
 
 async function fetchArtistDetails(artistId) {
   try {
-    const response = await fetch(`https://www.galseid.wip.la/api/v1/records/artists/${artistId}`);
+    const response = await fetch(`${API_ENDPOINTS.ARTIST}/${artistId}`);
     const data = await response.json();
     return data;
   } catch (error) {

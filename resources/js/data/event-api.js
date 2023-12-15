@@ -1,8 +1,9 @@
 import moment from "moment/moment";
+import API_ENDPOINTS from "../globals/api-endpoints";
 
 async function fetchEventsData() {
   try {
-    const response = await fetch('https://www.galseid.wip.la/api/v1/records/events');
+    const response = await fetch(API_ENDPOINTS.EVENT);
     const data = await response.json();
     return data.records;
   } catch (error) {

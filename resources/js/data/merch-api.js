@@ -1,6 +1,8 @@
+import API_ENDPOINTS from "../globals/api-endpoints";
+
 async function fetchMerchsData() {
   try {
-    const response = await fetch('https://www.galseid.wip.la/api/v1/records/merchs');
+    const response = await fetch(API_ENDPOINTS.MERCH);
     const data = await response.json();
     return data.records;
   } catch (error) {

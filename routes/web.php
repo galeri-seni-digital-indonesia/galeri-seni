@@ -47,6 +47,12 @@ Route::get('/merch', function () {
     ]);
 });
 
+Route::get('/art-recommendation/{q}', function () {
+    return view('pages/artRecommendation', [
+        "title" => "Rekomendasi Seni",
+    ]);
+});
+
 Route::get('/galeri/{id}', [ArtController::class, 'show']);
 Route::get('/acara/{id}', [EventController::class, 'show']);
 Route::get('/seniman/{id}', [ArtistController::class, 'show']);

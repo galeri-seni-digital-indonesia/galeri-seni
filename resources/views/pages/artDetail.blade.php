@@ -58,10 +58,11 @@
     </div>
   </div>
 </div>
-<script>
+
+<script>  
   async function fetchArtistName(artistId) {
     try {
-      const response = await fetch(`http://127.0.0.1:8000/api/v1/records/artists/${artistId}`);
+      const response = await fetch(`https://www.galseid.wip.la/api/v1/records/artists/${artistId}`);
       const data = await response.json();
       return data.nama;
     } catch (error) {

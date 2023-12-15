@@ -1,21 +1,23 @@
+import API_ENDPOINTS from "../globals/api-endpoints";
+
 async function fetchArtistsData() {
-  try {
-    const response = await fetch('https://www.galseid.wip.la/api/v1/records/artists');
-    const data = await response.json();
-    return data.records;
-  } catch (error) {
-    console.error('Error fetching artists data:', error);
-    throw error;
-  }
+    try {
+        const response = await fetch(API_ENDPOINTS.ARTIST);
+        const data = await response.json();
+        return data.records;
+    } catch (error) {
+        console.error("Error fetching artists data:", error);
+        throw error;
+    }
 }
 
 // update UI
 function updateArtistsUI(artistsData) {
-  // Assuming artistData is an array containing artists data
-  const artistsContainer = document.getElementById("artistData");
+    // Assuming artistData is an array containing artists data
+    const artistsContainer = document.getElementById("artistData");
 
-  artistsData.forEach(async (artist) => {
-    const artistHTML = `
+    artistsData.forEach(async (artist) => {
+        const artistHTML = `
       <div class="flex flex-col col-span-4 sm:col-span-6 lg:col-span-4 items-center m-3">
         <div class="flex items-center p-4 bg-galseid-blur border-4 border-galseid-yellow rounded-full">
           <img src="${artist.gambar}" alt="${artist.nama}" class="h-56 w-56 rounded-full object-cover mx-auto">
@@ -27,17 +29,17 @@ function updateArtistsUI(artistsData) {
       </div>
     `;
 
-    artistsContainer.innerHTML += artistHTML;
-  });
+        artistsContainer.innerHTML += artistHTML;
+    });
 }
 
 async function init() {
-  try {
-    const artistsData = await fetchArtistsData();
-    updateArtistsUI(artistsData);
-  } catch (error) {
-    console.error('Error initializing artists data:', error);
-  }
+    try {
+        const artistsData = await fetchArtistsData();
+        updateArtistsUI(artistsData);
+    } catch (error) {
+        console.error("Error initializing artists data:", error);
+    }
 }
 
 init();

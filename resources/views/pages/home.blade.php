@@ -2,6 +2,11 @@
 
 @section('main-content')
 
+@vite('resources/js/data/art-api.js')
+@vite('resources/js/data/event-api.js')
+@vite('resources/js/data/artist-api.js')
+@vite('resources/js/data/merch-api.js')
+
 <div class="xl:container xl:mx-auto px-14 md:px-24 lg:px-28">
 
   {{-- heros --}}

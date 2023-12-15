@@ -1,7 +1,4 @@
 import './bootstrap';
-import './drawer-initiator';
-import './art-api';
-import './event-api';
-import './artist-api';
-import './merch-api';
-import '../../public/assets/js/event-details';
+import './utils/drawer-initiator';
+import "./utils/art-recommendation";
+// import '../../public/assets/js/event-details';
