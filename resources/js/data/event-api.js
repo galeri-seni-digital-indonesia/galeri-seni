@@ -26,7 +26,7 @@ function updateEventsUI(eventsData) {
     <div class="relative col-span-4 sm:col-span-12 lg:col-span-6 h-full">
       <div class="flex flex-wrap flex-row-reverse p-6 items-center sm:justify-between bg-galseid-blur rounded-2xl h-full">
         <div class="flex mb-4 sm:mb-0">
-          <img src="${event.gambar}" alt="${event.nama}" class="h-40 w-40 object-cover rounded-2xl">
+          <img src="/assets/img/Image-placeholder.png" data-src="${event.gambar}" alt="${event.nama}" class="lazyload h-40 w-40 object-cover rounded-2xl">
         </div>
         <div class="flex flex-col gap-2 my-2 w-full sm:w-1/2 min-[530px]:w-1/2">
           <h3 class="w-full"><a href="/acara/${event.id}" class="text-galseid-dark text-l font-bold font-display truncate">

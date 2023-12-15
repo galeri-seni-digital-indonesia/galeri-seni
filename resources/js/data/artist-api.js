@@ -20,7 +20,7 @@ function updateArtistsUI(artistsData) {
         const artistHTML = `
       <div class="flex flex-col col-span-4 sm:col-span-6 lg:col-span-4 items-center m-3">
         <div class="flex items-center p-4 bg-galseid-blur border-4 border-galseid-yellow rounded-full">
-          <img src="${artist.gambar}" alt="${artist.nama}" class="h-56 w-56 rounded-full object-cover mx-auto">
+          <img src="/assets/img/Image-placeholder.png" data-src="${artist.gambar}" alt="${artist.nama}" class="lazyload h-56 w-56 rounded-full object-cover mx-auto">
         </div>
         <a href="/seniman/${artist.id}" class="w-full mt-[-16px] bg-gradient-to-b from-galseid-red-dark to-galseid-red-light  text-white text-2xl font-semibold font-display rounded-t-[90px] rounded-b-[36px] text-center truncate py-4 px-7">
           ${artist.nama}
