@@ -12,7 +12,7 @@
 
   {{-- heros --}}
   <div class="grid grid-cols-4 sm:grid-cols-12 gap-8 items-center">
-    <div class="col-span-4 sm:col-span-12 lg:col-span-6 xl:col-span-5 justify-start">
+    <div id="heroContent" class="col-span-4 sm:col-span-12 lg:col-span-6 xl:col-span-5 justify-start">
       <h1 class="mb-8 text-galseid-dark text-[46px]/[120%] md:text-[50px]/[120%] lg:text-[56px]/[120%] font-bold font-header">
         Apresiasi Karya Seni Nusantara Lewat Galse<span class="bg-gradient-to-t from-galseid-orange to-galseid-yellow bg-clip-text text-transparent">i</span><span class="bg-gradient-to-t from-galseid-red-dark to-galseid-red-light bg-clip-text text-transparent">d</span>
       </h1>
@@ -23,7 +23,7 @@
         Jelajahi Galeri Seni &ensp;<i class="fas fa-long-arrow-alt-right"></i>
       </a>
     </div>
-    <div class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 lg:col-start-7 items-center">
+    <div id="heroImage" class="col-span-4 sm:col-span-12 md:col-span-8 lg:col-span-6 lg:col-start-7 items-center">
       <img src="{{ asset('assets/img/hero-images.png') }}" alt="Placeholder Promo Image" class="p-5 w-full object-contain">
     </div>
   </div>

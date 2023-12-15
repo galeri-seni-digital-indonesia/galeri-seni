@@ -1,5 +1,6 @@
 import './bootstrap';
 import './utils/drawer-initiator';
+import './utils/scroll-reveal';
 
 import "lazysizes";
 // import a plugin

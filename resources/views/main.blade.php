@@ -5,6 +5,9 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>GalseId | {{ $title }}</title>
+      {{-- Favicon --}}
+      <link rel="icon" sizes="32x32" href="./favicon-dark.png" media="(prefers-color-scheme: dark)" />
+      <link rel="icon" sizes="32x32" href="./favicon-light.png" media="(prefers-color-scheme: light)" />
       <!-- Google Font-->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +18,8 @@
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"  rel="stylesheet" />
       {{-- tailwind CSS --}}
       @vite('resources/css/app.css')
+      {{-- Scroll Reveal --}}
+      <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     @include('partials.navbar')
