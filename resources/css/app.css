@@ -31,6 +31,12 @@
     margin-bottom: 24px;
   }
 
+  .image-detail {
+    min-height: 300px;
+    background: url('../../public/assets/img/Image-placeholder.png') no-repeat center center;
+    background-size: cover;
+  }
+
   #drawerMobile {
     left: 0;
   }

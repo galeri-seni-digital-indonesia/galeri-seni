@@ -48,7 +48,7 @@
       </div>
     </div>
     <div class="col-span-4 md:col-span-12 lg:col-span-6 lg:col-start-7 xl:col-span-5 xl:col-start-8 bg-gradient-to-b from-galseid-orange to-galseid-yellow rounded-xl p-2">
-      <img src="{{ $event['gambar'] }}" alt="{{ $event['nama'] }}" class="w-full h-full object-cover rounded-lg">
+      <img src="{{ $event['gambar'] }}" alt="{{ $event['nama'] }}" class="image-detail w-full h-full object-cover rounded-lg">
     </div>
   </div>
 </div>

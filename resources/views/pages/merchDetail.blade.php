@@ -5,7 +5,7 @@
 <div class="container mx-auto mt-3 md:mt-20 px-10 sm:px-16 md:px-24 lg:px-28">
   <div class="grid grid-cols-4 md:grid-cols-12 gap-8">
     <div class="col-span-4 md:col-span-12 lg:col-span-6 xl:col-span-5 bg-gradient-to-b from-galseid-orange to-galseid-yellow rounded-xl p-2">
-      <img src="{{ $merch['gambar'] }}" alt="{{ $merch['nama'] }}" class="w-full h-full object-cover rounded-lg">
+      <img src="{{ $merch['gambar'] }}" alt="{{ $merch['nama'] }}" class="image-detail w-full h-full object-cover rounded-lg">
     </div>
     <div class="col-span-4 md:col-span-12 lg:col-span-6 lg:col-start-7">
       <h1 class="text-galseid-dark text-3xl font-bold font-display mb-4">

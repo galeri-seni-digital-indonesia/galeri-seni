@@ -9,7 +9,7 @@
         {{ $art['nama'] }} <span class="text-galseid-orange">(<span class="text-galseid-red-dark">{{ $art['tahun'] }} </span>)</span>
       </h1>
       <div class="h-fit w-screen md:w-full bg-gradient-to-r md:bg-gradient-to-b from-galseid-orange to-galseid-yellow pt-2.5 md:p-2.5 md:rounded-3xl" style="min-height: 200px">
-        <img src="{{ $art['gambar'] }}" alt="{{ $art['nama'] }} " class="w-full h-fit object-cover md:rounded-2xl">
+        <img src="{{ $art['gambar'] }}" alt="{{ $art['nama'] }} " class="image-detail w-full h-fit object-cover md:rounded-2xl">
       </div>
       <div class="relative bg-gradient-to-b from-white via-white/80 to-white/0 md:bg-none mt-[-1.2rem] rounded-3xl px-7 sm:px-14 md:px-0 pb-16">
         <div class="relative grid grid-cols-[auto] lg:grid-cols-[auto_auto_auto] md:bg-galseid-blur md:rounded-3xl text-start align-top md:mx-20 lg:mx-14 md:mt-[-7rem] lg:mt-[-4rem] sm:px-4 pt-14 md:py-8 lg:py-5 z-100">
