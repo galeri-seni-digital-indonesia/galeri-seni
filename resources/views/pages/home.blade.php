@@ -2,11 +2,11 @@
 
 @section('main-content')
 
-@vite(asset('js/data/art-api.js'))
-@vite(asset('js/data/event-api.js'))
-@vite(asset('js/data/artist-api.js'))
-@vite(asset('js/data/merch-api.js'))
-@vite(asset('js/utils/art-recommendation.js'))
+@vite('../resources/js/data/art-api.js')
+@vite('../resources/js/data/event-api.js')
+@vite('../resources/js/data/artist-api.js')
+@vite('../resources/js/data/merch-api.js')
+@vite('../resources/js/utils/art-recommendation.js')
 
 <div class="xl:container xl:mx-auto px-8 md:px-24 lg:px-28">
 
