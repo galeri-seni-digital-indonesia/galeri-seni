@@ -10,7 +10,8 @@ export default defineConfig({
                     'resources/js/data/event-api.js',
                     'resources/js/data/artist-api.js',
                     'resources/js/data/merch-api.js',
-                    'resources/js/utils/art-recommendation.js'
+                    'resources/js/utils/art-recommendation.js',
+                    'resources/js/utils/event-details.js'
                    ],
             refresh: true,
         }),
