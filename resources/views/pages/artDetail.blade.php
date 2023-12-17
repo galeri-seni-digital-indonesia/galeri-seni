@@ -42,7 +42,7 @@
           <div class="h-2 w-24 bg-gradient-to-r from-galseid-orange to-galseid-yellow rounded-full mt-16 mb-8 mx-auto"></div>
           {{-- BEGIN: Ganti paragraf di sini --}}
           <p>
-            {{ $art['deskripsi'] }}
+            {!! $art['deskripsi'] !!}
           </p>
           {{-- END: Ganti paragraf di sini --}}
         </div>
