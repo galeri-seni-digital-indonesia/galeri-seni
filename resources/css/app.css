@@ -17,7 +17,7 @@
   body {
     position: relative;
     background: #F5F5F5 url('../../public/assets/img/bg-blur.png') repeat center top;
-    /* background-size: cover; */
+    background-size: contain;
     color: #1d1d1d;
   }
 
