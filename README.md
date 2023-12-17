@@ -1,66 +1,38 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://galseid.wip.la/" target="_blank"><img src="https://content.pstmn.io/571613f9-4d04-41fa-8967-b4b0a253af64/Z2Fsc2VpZC1sb2dvLWRlc2lnbi5wbmc=" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## :information_source: About Galseid
 
-## About Laravel
+Galseid is a web application that provides a collection of paintings, information on prominent painters, art event agenda, and a stunning merchandise catalog. Through Galseid, we strive to bridge traditional art with modern technology, overcoming the challenge of lack of accessibility and information on Indonesian art and culture.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## :grey_question: Background
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Indonesia has various types of arts and culture spread throughout the archipelago, but the lack of accessibility and information about Indonesian cultural arts, plus the impact of globalization that shifts local culture makes people less familiar with and understand Indonesian cultural arts.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Therefore, our team chose this project because we want to promote Indonesian cultural arts to be better known by the public and not to be displaced by globalization while applying the learning paths that we have learned such as Front-End, API (Back-End), and DevOps development to this web application. We also apply Artificial Intelligence (AI) through the painting recommendation feature with the Content-Based Filtering method.
 
-## Learning Laravel
+## :man: Our Team
+- Muhammad Falah Abdurrafi - [Universitas Stikubank](https://www.unisbank.ac.id/)
+- Anthonio Adley Putra Sasangka - [Universitas Gadjah Mada](https://ugm.ac.id/)
+- Muhammad Ilham Nor Ramadhani - [Universitas Lambung Mangkurat](https://ulm.ac.id/)
+- Ahmad Abdul Basir - [Universitas Bina Sarana Informatika](https://www.bsi.ac.id/)
+- Reza Adiyat Dwi Kurniawan - [Universitas Ahmad Dahlan](https://uad.ac.id/)
+<br>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## :orange_book: User Guide
+- <a href="https://drive.google.com/file/d/1_OSbWo2afubKuMBLPrsGnyYClXDdrPkX/view" target="_parent">Galseid User Guide</a>
+<br>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## :scroll: Project Brief
+- <a href="https://drive.google.com/file/d/1ifA-1OBQwAoJjxz8itXF3QVotwSzsxpo/view" target="_parent">Galseid Project Brief</a>
+<br>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## :globe_with_meridians: API Documentation
+- <a href="https://galseid.wip.la/api/v1/records" target="_parent">Galseid API</a>
+<br>
 
-## Laravel Sponsors
+## :computer: Deployed Link
+- <a href="https://galseid.wip.la/" target="_parent">www.GALSEID.wip.la</a>
+<br>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## :mag_right: Website Preview
+<img src="./preview-image.png" alt="Preview Image"/>
