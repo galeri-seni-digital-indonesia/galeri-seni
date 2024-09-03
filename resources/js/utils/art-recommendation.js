@@ -136,6 +136,7 @@ async function updateArtsUI(artsData, recQuery) {
    artsContainer.innerHTML = '';
    queryContainer.innerHTML = '';
    emptyMessage.innerHTML = '';
+   emptyMessage.classList.add("hidden");
 
    queryContainer.innerHTML += '<div class="w-fit text-white text-lg bg-galseid-dark mx-auto mb-1 px-3 pb-1 rounded-md">Rekomendasi untuk :</div>' + recQuery;
 

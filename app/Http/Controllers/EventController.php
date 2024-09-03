@@ -11,7 +11,8 @@ class EventController extends Controller
     {
 
         $client = new Client(); //GuzzleHttp\Client
-        $url = "https://galseid.wip.la/api/v1/records/events/{$id}";
+        $apiUrl = env('API_URL');
+        $url = "{$apiUrl}events/{$id}";
 
 
         $response = $client->request('GET', $url, [

@@ -11,7 +11,8 @@ class MerchController extends Controller
     {
 
         $client = new Client(); //GuzzleHttp\Client
-        $url = "https://galseid.wip.la/api/v1/records/merchs/{$id}";
+        $apiUrl = env('API_URL');
+        $url = "{$apiUrl}merchs/{$id}";
 
 
         $response = $client->request('GET', $url, [

@@ -11,7 +11,8 @@ class ArtistController extends Controller
     {
 
         $client = new Client(); //GuzzleHttp\Client
-        $url = "https://galseid.wip.la/api/v1/records/artists/{$id}";
+        $apiUrl = env('API_URL');
+        $url = "{$apiUrl}artists/{$id}";
 
 
         $response = $client->request('GET', $url, [

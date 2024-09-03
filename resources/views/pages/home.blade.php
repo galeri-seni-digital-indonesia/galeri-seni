@@ -35,7 +35,7 @@
       <p class="text-md sm:text-lg mt-5 sm:px-8 mb-3 text-justify">Gunakan fitur rekomendasi untuk menemukan lukisan yang sesuai dengan preferensi anda. Anda dapat memasukkan query rekomendasi berdasarkan makna lukisan, bentuk, dll. Coba menggunakan contoh berikut :</p>
       <button id="recExample1" type="button" class="inline font-header font-semibold bg-gradient-to-r from-galseid-orange/30 to-galseid-yellow/10 hover:from-galseid-dark/30 hover:to-galseid-dark/10 border border-galseid-orange hover:border-galseid-dark rounded-lg px-4 me-2 mb-3 transition-all">Abstrak dan geometris</button>
       <button id="recExample2" type="button" class="inline font-header font-semibold bg-gradient-to-r from-galseid-orange/30 to-galseid-yellow/10 hover:from-galseid-dark/30 hover:to-galseid-dark/10 border border-galseid-orange hover:border-galseid-dark rounded-lg px-4 me-2 mb-3 transition-all">Kolonialisme</button>
-      <button id="recExample3" type="button" class="inline font-header font-semibold bg-gradient-to-r from-galseid-orange/30 to-galseid-yellow/10 hover:from-galseid-dark/30 hover:to-galseid-dark/10 border border-galseid-orange hover:border-galseid-dark rounded-lg px-4 mb-3 transition-all">Lukisan dengan tema romantis</button>
+      <button id="recExample3" type="button" class="inline font-header font-semibold bg-gradient-to-r from-galseid-orange/30 to-galseid-yellow/10 hover:from-galseid-dark/30 hover:to-galseid-dark/10 border border-galseid-orange hover:border-galseid-dark rounded-lg px-4 mb-3 transition-all">Tema romantisme</button>
       <!-- Modal toggle -->
       <div class="mt-5">
         <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>

@@ -11,8 +11,8 @@ class ArtController extends Controller
     {
 
         $client = new Client(); //GuzzleHttp\Client
-        $url = "https://galseid.wip.la/api/v1/records/arts/{$id}";
-
+        $API_URL = env('API_URL');
+        $url = "{$API_URL}arts/{$id}";
 
         $response = $client->request('GET', $url, [
             'verify'  => false,
@@ -21,6 +21,14 @@ class ArtController extends Controller
         $art = json_decode($response->getBody(), true);
         
         $title = isset($art['nama']) ? $art['nama'] : 'Art Detail';
+
+        // Get Artist's Name
+        $artistUrl = "{$API_URL}artists/{$art['artistId']}";
+        $artistResponse = $client->request('GET', $artistUrl, [
+            'verify'  => false,
+        ]);
+        $artist = json_decode($artistResponse->getBody(), true);
+        $art['artistName'] = $artist['nama'];
 
         return view('pages.artDetail', compact('art'))->with('title', $title);
     }

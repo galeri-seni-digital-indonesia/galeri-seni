@@ -51,7 +51,7 @@ class ArtistSeeder extends Seeder
             ],
             [
                 'nama' => 'Harijadi Sumadidjaja',
-                'gambar' => 'http://archive.ivaa-online.org/img/artists/small/1333962809.jpg',
+                'gambar' => 'https://gni.kemdikbud.go.id/pameran-virtual/images/zamanperalihan/karya/Harijadi-Sumadidjaja-1919%E2%80%931997-Potret-Diri.webp?imwidth=1920',
                 'biodata' => 'Harijadi Sumadidjaja lahir di Ketawangrejo, Kutoarjo, Jawa Tengah, 25 Juli 1919. Ia seorang pelukis otodidak. Sejak tahun 1946 bergabung dengan Sanggar Seniman Masjarakat dan Seniman Indonesia Moeda (SIM) di Yogyakarta. Selama perjuangan kemerdekaan Harijadi menjadi anggota Tentara Peladjar.'
             ],
             [
@@ -76,7 +76,7 @@ class ArtistSeeder extends Seeder
             ],
             [
                 'nama' => 'Otto Djaya',
-                'gambar' => 'https://silviagalikano.com/wp-content/uploads/2016/12/master-landscape_edited.jpg',
+                'gambar' => 'https://www.datatempo.co/cover/custom/foto/2015/06/05/r_20A03602.jpg',
                 'biodata' => 'Otto Djaya atau lengkapnya Raden Otto Djaya Suntara merupakan pelukis handal asal Indonesia yang berkarya dalam beberapa zaman: Mulai era Pemerintahan Hindia Belanda, Pendudukan Kerajaan Jepang, Revolusi Fisik, Orde Lama, Orde Baru, sampai Jaman Reformasi. Meski ia bersikeras tidak mau terjebak dalam gaya-gaya klasik manapun, Otto adalah pelukis beraliran ekpresionis. Karya-karya lukisannya digemari dan diakui hingga mancanegara. Salah satu pengkoleksi karyanya adalah Presiden Republik Indonesia pertama, Ir. Soekarno. Otto merupakan seniman lukis sekaligus pejuang kemerdekaan'
             ],
             [
@@ -86,7 +86,7 @@ class ArtistSeeder extends Seeder
             ],
             [
                 'nama' => 'Basoeki Abdullah',
-                'gambar' => 'https://museumbasoekiabdullah.or.id/assets/uploads/profil/2_BasGaya.jpg',
+                'gambar' => 'https://cdn.visiteliti.com/cms/assets/news_image/berita_valid1507803435.jpg',
                 'biodata' => 'Fransiskus Xaverius Basuki Abdullah (ejaan lama: Basoeki Abdullah; 25 Januari 1915 – 5 November 1993)[1][2] adalah salah seorang maestro pelukis Indonesia. Ia dikenal sebagai pelukis aliran realis dan naturalis. Ia pernah diangkat oleh Presiden Soekarno sebagai pelukis Istana Merdeka, Jakarta,[3] dan karya-karyanya menghiasi istana-istana negara dan kepresidenan Indonesia, di samping menjadi barang koleksi di penjuru dunia.'
             ],
             [
@@ -100,9 +100,9 @@ class ArtistSeeder extends Seeder
                 'biodata' => 'Siapa yang tidak kenal dengan pelukis “kondang” dari Yogyakarta ini? Rambut perak, kulit hitam, menyukai kacamata warna gelap, sepatu putih, gelang plus kalung emas bermedali. Itulah pelukis Sapto Hoedojo, yang bernama lengkap Doktor Raden Mas Sapto Hoedojo FRSA (Felloe Royal School of Art), kelahiran Sala (Jawa Tengah) 6 Februari 1925.'
             ],
             [
-                'nama' => 'S. Sudjojono',
-                'gambar' => 'https://upload.wikimedia.org/wikipedia/id/7/75/Sindudarsono-sudjojono.jpg',
-                'biodata' => 'Sindoedarsono Soedjojono (14 Desember 1913 – 25 Maret 1985)[1] beliau merupakan pelukis legendaris di Indonesia.[2] Dengan diawali oleh Trisno Soemardjo, Sudjojono dijuluki sebagai Bapak Seni Rupa Modern Indonesia. Julukan ini diberikan kepadanya karena Sudjojono adalah seniman pertama Indonesia yang memperkenalkan modernitas seni rupa Indonesia dengan konteks kondisi faktual bangsa Indonesia. Ia memperkenalkan jiwa ketok atau "jiwa tampak" sebagai identitas seni Indonesia. Ia biasa menulis namanya dengan “S. Sudjojono”.'
+                'nama' => 'A. Rustamadji',
+                'gambar' => 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhCJNR539P51VvdQv1OumEIRSWts9keOOG2ZRXV7eTEZDJTTnFeHue0Dn4-z0YjUP4-yfkCpOIOf5yxCCzKHNBwarlXNnKGZoVQ8dOyCA9nx1hcd9IQ_-ZOHx2bKB5oubRBUffjcjKJRkpI/s778/rustamadji.jpg',
+                'biodata' => '<p>Rustamadji adalah seorang pelukis realis otodidak yang menguasai teori warna, bentuk, dan komposisi dengan sangat baik. Meskipun tidak pernah belajar seni secara formal, karyanya menunjukkan keahlian setara dengan pelukis akademis. Lukisannya menggambarkan kehidupan masyarakat kampung di Klaten, tempat tinggalnya, dengan detail yang sangat tinggi.</p><p>Tema-tema yang diangkat dalam karyanya bervariasi, dari pemandangan alam hingga kehidupan sehari-hari di kampung, seperti anak-anak memberi makan ayam atau orang jualan es. Lukisannya mengekspresikan nilai-nilai spiritual dan realitas yang sederhana namun bermakna.</p><p>Presiden Soekarno sangat menyukai karyanya, bahkan mengoleksi salah satu lukisannya untuk Istana Kepresidenan. Selain Soekarno, beberapa kolektor lain seperti Adam Malik juga memiliki karya Rustamadji. Rustamadji, yang lahir di Klaten pada tahun 1921 dan wafat pada 2001, adalah seorang pelukis yang kreatif dan produktif. Setelah berkarier di berbagai kota besar, ia memilih kembali ke Klaten, tempat di mana kreativitasnya semakin berkembang.</p><p>Lukisannya bukan hanya sekadar meniru realitas yang terlihat, tetapi juga berhasil menangkap suasana yang mendalam dari objek-objek tersebut. Lukisan-lukisan seperti petani membajak sawah atau anak menggiring bebek di sawah, membuat kita merasa seolah-olah berada di tempat itu. Karya-karyanya menggambarkan keindahan dan keunikan kehidupan kampung yang sederhana namun penuh makna.</p>'
             ],
             [
                 'nama' => 'Suromo D. S.',
@@ -113,11 +113,6 @@ class ArtistSeeder extends Seeder
                 'nama' => 'Tatang Ganar',
                 'gambar' => 'https://www.datatempo.co/cover/custom/foto/2015/06/17/r_06A05907.jpg',
                 'biodata' => 'Tatang Ganar adalah seorang pelukis Modern & Kontemporer Asia Indonesia yang lahir pada tahun 1936. Karya Tatang Ganar telah beberapa kali ditawarkan di lelang, dengan harga realisasi berkisar antara 249 USD hingga 1,918 USD, tergantung pada ukuran dan media karya seninya. Sejak tahun 2010 rekor harga lelang artis ini adalah 1,918 USD untuk Pasar Burung, dijual di Masterpiece Auction - Online pada tahun 2021. Artis tersebut meninggal pada tahun 2004.'
-            ],
-            [
-                'nama' => 'Yerie Yulanda',
-                'gambar' => 'http://archive.ivaa-online.org/img/artists/small/1636621374.jpg',
-                'biodata' => 'Yerie Yulanda, seniman asal Singkawang, Kalimantan Barat, yang sering terlibat dalam berbagai pameran di Kalimantan maupun di Yogyakarta. Singkawang, kota asal Yerie, memiliki satu-satunya Rumah Sakit Kusta di Kalimantan. Sementara, para penderita kusta banyak mendapat diskriminasi dan stigma negatif karena penyakitnya yang dianggap mudah menular. Kali ini, Yerie ingin melihat ulang posisi kaum disabilitas di Singkawang yang berpredikat sebagai Kota Toleransi di Indonesia, melalui proses kolaborasi penciptaan karya bersama.'
             ],
             [
                 'nama' => 'Hendra Gunawan',

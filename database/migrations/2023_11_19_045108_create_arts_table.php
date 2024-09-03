@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('tahun');
             $table->string('ukuran');
             $table->string('mediaLukis');
-            $table->string('gambar');
+            $table->text('gambar');
             $table->text('deskripsi');
             $table->string('sumber');
             $table->foreignId('artistId');

@@ -18,7 +18,7 @@
         <div class="paragraphs text-base pb-8 font-display text-justify">
           {{-- BEGIN: Ganti paragraf di sini --}}
           <p class="">
-            {{ $artist['biodata'] }}
+            {!! $artist['biodata'] !!}
           </p>
           {{-- END: Ganti paragraf di sini --}}
         </div>

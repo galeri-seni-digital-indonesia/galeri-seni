@@ -35,7 +35,7 @@
             </div>
             <h2 class="font-header font-bold text-xl bg-gradient-to-t from-galseid-red-dark to-galseid-red-light bg-clip-text text-transparent">Seniman</h2>
             <div></div>
-            <div id="artistName"></div>
+            <p class="font-display font-bold text-galseid-dark mt-1">{{ $art['artistName'] }} </p>
           </div>
         </div>
         <div class="paragraphs text-galseid-dark text-lg font-display text-justify mt-10 mb-20">
@@ -59,31 +59,7 @@
   </div>
 </div>
 
-<script>  
-  async function fetchArtistName(artistId) {
-    try {
-      const response = await fetch(`https://www.galseid.wip.la/api/v1/records/artists/${artistId}`);
-      const data = await response.json();
-      return data.nama;
-    } catch (error) {
-      console.error('Error fetching artist name:', error);
-      throw error;
-    }
-  }
-
-  function updateArtistName(artistName) {
-    const artistNameContainer = document.getElementById('artistName');
-    const artistNameHTML = `<p class="font-display font-bold text-galseid-dark mt-1">${artistName}</p>`;
-    artistNameContainer.innerHTML = artistNameHTML;
-  }
-
-  // Get the artistId from your existing art details
-  const artistId = {{ $art['artistId'] }}
-
-  fetchArtistName(artistId)
-    .then(updateArtistName)
-    .catch(error => console.error('Error:', error));
-
+<script>
   document.title = `GalseId | {{ $title }}`;
 </script>
 @endsection
