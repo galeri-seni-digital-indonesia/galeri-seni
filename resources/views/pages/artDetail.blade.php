@@ -3,7 +3,7 @@
 @section('main-content')
 
 <div class="xl:container xl:mx-auto mt-3 md:mt-20 px-0 md:px-24 lg:px-28">
-  <div class="grid grid-cols-4 md:grid-cols-12 text-center">
+  <div class="grid grid-cols-4 md:grid-cols-12 text-center mt-36">
     <div class="col-span-4 md:col-span-12 lg:col-span-10 xl:col-span-8 lg:col-start-2 xl:col-start-3 h-fit">
       <h1 class="text-galseid-dark text-3xl md:text-4xl font-bold font-header px-20 mb-10">
         {{ $art['nama'] }} <span class="text-galseid-orange">(<span class="text-galseid-red-dark">{{ $art['tahun'] }} </span>)</span>

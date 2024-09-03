@@ -3,7 +3,7 @@
 @section('main-content')
 
 <div class="container mx-auto mt-3 md:mt-20 px-0 md:px-24 lg:px-28">
-  <div class="grid grid-cols-4 md:grid-cols-12 text-center">
+  <div class="grid grid-cols-4 md:grid-cols-12 text-center mt-36">
     <div class="col-span-4 md:col-span-12 lg:col-span-10 xl:col-span-8 lg:col-start-2 xl:col-start-3">
       <div class="w-fit p-4 mx-auto bg-gradient-to-b from-galseid-red-dark to-galseid-red-light border-8 border-galseid-yellow rounded-full">
         <img src="{{ $artist['gambar'] }}" alt="{{ $artist['nama'] }}" class="image-detail h-48 w-48 sm:h-60 sm:w-60 md:h-80 md:w-80 rounded-full object-cover">

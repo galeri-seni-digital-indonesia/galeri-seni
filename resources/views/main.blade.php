@@ -26,7 +26,7 @@
   <body>
     @include('partials.navbar')
     
-    <main id="mainContent" class="mt-0 sm:mt-9 mb-40">
+    <main id="mainContent" class="mb-40">
       @yield('main-content')
     </main>
     

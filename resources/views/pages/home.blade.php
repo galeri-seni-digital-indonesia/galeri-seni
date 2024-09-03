@@ -11,7 +11,7 @@
 <div class="xl:container xl:mx-auto px-8 md:px-24 lg:px-28">
 
   {{-- heros --}}
-  <div class="grid grid-cols-4 sm:grid-cols-12 gap-8 items-center">
+  <div class="grid grid-cols-4 sm:grid-cols-12 gap-8 items-center mt-36">
     <div id="heroContent" class="col-span-4 sm:col-span-12 lg:col-span-6 xl:col-span-5 justify-start">
       <h1 class="mb-8 text-galseid-dark text-[46px]/[120%] md:text-[50px]/[120%] lg:text-[56px]/[120%] font-bold font-header">
         Apresiasi Karya Seni Nusantara Lewat Galse<span class="bg-gradient-to-t from-galseid-orange to-galseid-yellow bg-clip-text text-transparent">i</span><span class="bg-gradient-to-t from-galseid-red-dark to-galseid-red-light bg-clip-text text-transparent">d</span>
@@ -29,7 +29,7 @@
   </div>
 
   {{-- art --}}
-  <section id="galeri">
+  <section id="galeri" class="scroll-mt-32">
     <div class="text-center mt-36 mb-20">
       <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Galeri Seni</h2>
       <p class="text-md sm:text-lg mt-5 sm:px-8 mb-3 text-justify">Gunakan fitur rekomendasi untuk menemukan lukisan yang sesuai dengan preferensi anda. Anda dapat memasukkan query rekomendasi berdasarkan makna lukisan, bentuk, dll. Coba menggunakan contoh berikut :</p>
@@ -99,17 +99,17 @@
 
 
   {{-- event --}}
-  <section id="acara">
+  <section id="acara" class="scroll-mt-32">
     <div class="text-center mt-36 mb-20">
       <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Acara Seni</h2>
     </div>
-    <div id="eventData" class="grid grid-cols-4 sm:grid-cols-12 gap-8 items-center">
+    <div id="eventData" class="grid grid-cols-12 gap-4 sm:gap-8 items-center">
       
     </div>
   </section>
   
   {{-- artist --}}
-  <section id="seniman">
+  <section id="seniman" class="scroll-mt-32">
     <div class="text-center mt-36 mb-20">
       <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Seniman</h2>
     </div>
@@ -120,7 +120,7 @@
   
 
   {{-- merch --}}
-  <section id="merch">
+  <section id="merch" class="scroll-mt-32">
     <div class="text-center mt-36 mb-20">
       <h2 class="galseid-title"><span class="galseid-bg-title">&nbsp;</span>Merchandise</h2>
     </div>

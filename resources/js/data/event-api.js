@@ -23,13 +23,13 @@ function updateEventsUI(eventsData) {
     const formattedTime = moment(event.tanggal).format("HH:mm");
 
     const eventHTML = `
-    <div class="relative col-span-4 sm:col-span-12 lg:col-span-6 h-full">
+    <div class="relative col-span-12 min-[460px]:col-span-6 h-full">
       <div class="flex flex-wrap flex-row-reverse p-6 items-center sm:justify-between bg-galseid-blur rounded-2xl h-full">
-        <div class="flex mb-4 sm:mb-0">
-          <img src="/assets/img/Image-placeholder.png" data-src="${event.gambar}" alt="${event.nama}" class="lazyload h-40 w-40 object-cover rounded-2xl">
+        <div class="flex mb-4 lg:mb-0">
+          <img src="/assets/img/Image-placeholder.png" data-src="${event.gambar}" alt="${event.nama}" class="lazyload h-40 w-full sm:w-80 lg:w-40 object-cover rounded-2xl">
         </div>
-        <div class="flex flex-col gap-2 my-2 w-full sm:w-1/2 min-[530px]:w-1/2">
-          <h3 class="w-full"><a href="/acara/${event.id}" class="text-galseid-dark text-l font-bold font-display truncate">
+        <div class="flex flex-col gap-2 my-2 w-full lg:w-1/2">
+          <h3 class="w-full truncate"><a href="/acara/${event.id}" class="w-full text-galseid-dark text-xl font-bold font-display truncate">
             ${event.nama}
           </a></h3>
           <div class="grid grid-template gap-x-2 gap-y-1 me-6">
@@ -40,7 +40,7 @@ function updateEventsUI(eventsData) {
             <div class="flex justify-center items-center">
               <i class="fas fa-map-marker-alt bg-gradient-to-tr from-galseid-orange to-galseid-yellow bg-clip-text text-transparent"></i>
             </div>
-            <p class="font-display">${event.lokasi}</p>
+            <p class="font-displa truncate">${event.lokasi}</p>
             <div class="flex justify-center items-center ">
               <i class="far fa-calendar bg-gradient-to-tr from-galseid-orange to-galseid-yellow bg-clip-text text-transparent"></i>
             </div>

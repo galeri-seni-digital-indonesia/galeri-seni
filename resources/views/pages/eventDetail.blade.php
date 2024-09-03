@@ -3,7 +3,7 @@
 @section('main-content')
 
 <div class="container mx-auto mt-3 md:mt-20 px-10 sm:px-16 md:px-24 lg:px-28">
-  <div class="grid grid-cols-4 md:grid-cols-12 gap-8">
+  <div class="grid grid-cols-4 md:grid-cols-12 gap-8 mt-36">
     <div class="col-span-4 md:col-span-12 lg:col-span-6">
       <div class="flex flex-col gap-5">
         <h3 class="text-galseid-dark text-4xl font-bold font-header mb-4">
